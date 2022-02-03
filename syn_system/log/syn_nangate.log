@@ -1,0 +1,605 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP2 for linux64 - Dec 03, 2020 
+
+                    Copyright (c) 1988 - 2020 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+set ROOT_PATH                    ../..
+../..
+set RISCV_PATH              	$ROOT_PATH
+../..
+set FPUNEW                      $ROOT_PATH/tb/core/fpnew
+../../tb/core/fpnew
+set GATE_PATH			../standalone
+../standalone
+set LOG_PATH			../log
+../log
+set TECH NangateOpenCell
+NangateOpenCell
+#set search_path [ join "$RISCV_PATH/rtl/include $search_path" ]
+set search_path [ join "/data/libraries/LIB065 $search_path" ]
+/data/libraries/LIB065 . /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/dw/syn_ver /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/dw/sim_ver
+set search_path [ join "/data/libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/fix_scan $search_path" ]
+/data/libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/fix_scan /data/libraries/LIB065 . /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/dw/syn_ver /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/dw/sim_ver
+set search_path [ join "/data/libraries/pdt2002 $search_path" ]
+/data/libraries/pdt2002 /data/libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/fix_scan /data/libraries/LIB065 . /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/dw/syn_ver /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/dw/sim_ver
+set search_path [ join "../techlib/ $search_path" ]
+../techlib/ /data/libraries/pdt2002 /data/libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/fix_scan /data/libraries/LIB065 . /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/dw/syn_ver /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/dw/sim_ver
+#set search_path [ join "[getenv 'SYNOPSYS'] $search_path" ]
+set synthetic_library dw_foundation.sldb
+dw_foundation.sldb
+source ../bin/$TECH.dc_setup_synthesis.tcl
+typical
+#analyze -format verilog  -work work ${RISCV_PATH}/syn/output/riscv_core_scan.v
+analyze -format vhdl  -work work ${RISCV_PATH}/src/flipflop.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration FLIPFLOP
+Compiling Architecture SYNCH of FLIPFLOP
+Warning:  ../../src/flipflop.vhd:15: The architecture SYNCH has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+Loading db file '/home/s287758/tft-hw-assignment/syn_system/techlib/NangateOpenCellLibrary_typical_ccs_scan.db'
+Information: Using CCS timing libraries. (TIM-024)
+Loading db file '/eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn/dw_foundation.sldb'
+1
+analyze -format vhdl  -work work ${RISCV_PATH}/src/mux2to1.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration MUX2TO1
+Compiling Architecture BEHAVIOR of MUX2TO1
+Warning:  ../../src/mux2to1.vhd:9: The architecture behavior has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -format vhdl  -work work ${RISCV_PATH}/src/lfsr.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration LFSR
+Compiling Architecture RTL of LFSR
+Warning:  ../../src/lfsr.vhd:15: The architecture rtl has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -format vhdl  -work work ${RISCV_PATH}/src/misr.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration MISR
+Compiling Architecture RTL of MISR
+Warning:  ../../src/misr.vhd:12: The architecture rtl has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -format vhdl  -work work ${RISCV_PATH}/src/bist_controller.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration BIST_CONTROLLER
+Compiling Architecture ARCH of BIST_CONTROLLER
+Warning:  ../../src/bist_controller.vhd:23: The architecture arch has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -format vhdl  -work work ${RISCV_PATH}/src/bist.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration BIST
+Compiling Architecture RTL of BIST
+Warning:  ../../src/bist.vhd:20: The architecture rtl has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+#analyze -format sverilog  -work work ${RISCV_PATH}/syn_lbist/riscv_wrapper_gate.sv
+set TOPLEVEL		bist
+bist
+elaborate $TOPLEVEL -work work 
+Loading db file '/eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn/gtech.db'
+Loading db file '/eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../../src/bist.vhd:77: The initial value for signal 'seed' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ../../src/bist.vhd:77: The initial value for signal 'scan_chain_input_sig' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[19] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[18] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[17] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[16] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[15] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[14] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[13] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[12] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[11] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[10] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[9] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[8] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[7] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[6] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[5] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[4] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[3] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[2] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[1] of cell lfsr_port' connected to ground. (ELAB-294)
+Warning:  ../../src/bist.vhd:90: Floating pin 'seed[0] of cell lfsr_port' connected to ground. (ELAB-294)
+Presto compilation completed successfully. (bist)
+Elaborated 1 design.
+Current design is now 'bist'.
+Information: Building the design 'mux2to1'. (HDL-193)
+Presto compilation completed successfully. (mux2to1)
+Information: Building the design 'lfsr'. (HDL-193)
+Presto compilation completed successfully. (lfsr)
+Information: Building the design 'misr'. (HDL-193)
+Presto compilation completed successfully. (misr)
+Information: Building the design 'bist_controller'. (HDL-193)
+
+Statistics for case statements in always block at line 48 in file
+	'../../src/bist_controller.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            50            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 74 in file
+	'../../src/bist_controller.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            76            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine bist_controller line 37 in file
+		'../../src/bist_controller.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  present_state_reg  | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine bist_controller line 162 in file
+		'../../src/bist_controller.vhd'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+| count_vector_unsigned_reg | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine bist_controller line 173 in file
+		'../../src/bist_controller.vhd'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+| count_shift_unsigned_reg | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================
+Presto compilation completed successfully. (bist_controller)
+Information: Building the design 'flipflop'. (HDL-193)
+
+Inferred memory devices in process
+	in routine flipflop line 19 in file
+		'../../src/flipflop.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (flipflop)
+1
+link
+
+  Linking design 'bist'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  NangateOpenCellLibrary (library) /home/s287758/tft-hw-assignment/syn_system/techlib/NangateOpenCellLibrary_typical_ccs_scan.db
+  dw_foundation.sldb (library) /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn/dw_foundation.sldb
+
+1
+uniquify
+Information: Uniquified 21 instances of design 'mux2to1'. (OPT-1056)
+Information: Uniquified 40 instances of design 'flipflop'. (OPT-1056)
+1
+check_design 
+ 
+****************************************
+check_design summary:
+Version:     R-2020.09-SP2
+Date:        Fri Jan 14 18:26:07 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              23
+    Cells do not drive (LINT-1)                                     2
+    Connected to power or ground (LINT-32)                         20
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'bist_controller', cell 'C560' does not drive any nets. (LINT-1)
+Warning: In design 'bist_controller', cell 'C565' does not drive any nets. (LINT-1)
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[19]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[18]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[17]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[16]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[15]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[14]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[13]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[12]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[11]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[10]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[9]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[8]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[7]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[6]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[5]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[4]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[3]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[2]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[1]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'lfsr_port' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'seed[0]' is connected to logic 0. 
+Warning: In design 'bist', the same net is connected to more than one pin on submodule 'lfsr_port'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'seed[19]', 'seed[18]'', 'seed[17]', 'seed[16]', 'seed[15]', 'seed[14]', 'seed[13]', 'seed[12]', 'seed[11]', 'seed[10]', 'seed[9]', 'seed[8]', 'seed[7]', 'seed[6]', 'seed[5]', 'seed[4]', 'seed[3]', 'seed[2]', 'seed[1]', 'seed[0]'.
+1
+create_clock -name MY_CLK -period 10 clk
+1
+set_dont_touch_network MY_CLK
+1
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+1
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
+1
+set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+1
+compile_ultra -no_autoungroup
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | R-2020.09-DWBB_202009.2 |     *     |
+| Licensed DW Building Blocks        | R-2020.09-DWBB_202009.2 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 23 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'bist'
+
+Loaded alib file './alib-52/NangateOpenCellLibrary_typical_ccs_scan.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'bist_controller'
+ Implement Synthetic for 'bist_controller'.
+  Processing 'bist'
+  Processing 'lfsr'
+  Processing 'misr'
+  Processing 'flipflop_0'
+  Processing 'mux2to1_20'
+  Processing 'mux2to1_0'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Complementing port 'ENABLE' in design 'flipflop_0'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_1'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_2'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_3'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_4'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_5'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_6'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_7'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_8'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_9'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_10'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_11'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_12'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_13'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_14'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_15'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_16'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_17'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_18'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'ENABLE' in design 'flipflop_19'.
+	 The new name of the port is 'ENABLE_BAR'. (OPT-319)
+Information: Complementing port 'misr_so_enable' in design 'misr'.
+	 The new name of the port is 'misr_so_enable_BAR'. (OPT-319)
+Information: Complementing port 'misr_so_enable' in design 'bist_controller'.
+	 The new name of the port is 'misr_so_enable_BAR'. (OPT-319)
+Information: The register 'lfsr_port/ff_1/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_2/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_3/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_4/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_5/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_6/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_7/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_8/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_9/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_10/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_11/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_12/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_13/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_14/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_15/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_16/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_17/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_18/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_19/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'lfsr_port/ff_0/Q_reg' is a constant and will be removed. (OPT-1206)
+Information: Removing unused design 'flipflop_39'. (OPT-1055)
+Information: Removing unused design 'mux2to1_19'. (OPT-1055)
+Information: Removing unused design 'flipflop_20'. (OPT-1055)
+Information: Removing unused design 'flipflop_21'. (OPT-1055)
+Information: Removing unused design 'flipflop_22'. (OPT-1055)
+Information: Removing unused design 'flipflop_23'. (OPT-1055)
+Information: Removing unused design 'flipflop_24'. (OPT-1055)
+Information: Removing unused design 'flipflop_25'. (OPT-1055)
+Information: Removing unused design 'flipflop_26'. (OPT-1055)
+Information: Removing unused design 'flipflop_27'. (OPT-1055)
+Information: Removing unused design 'flipflop_28'. (OPT-1055)
+Information: Removing unused design 'flipflop_29'. (OPT-1055)
+Information: Removing unused design 'flipflop_30'. (OPT-1055)
+Information: Removing unused design 'flipflop_31'. (OPT-1055)
+Information: Removing unused design 'flipflop_32'. (OPT-1055)
+Information: Removing unused design 'flipflop_33'. (OPT-1055)
+Information: Removing unused design 'flipflop_34'. (OPT-1055)
+Information: Removing unused design 'flipflop_35'. (OPT-1055)
+Information: Removing unused design 'flipflop_36'. (OPT-1055)
+Information: Removing unused design 'flipflop_37'. (OPT-1055)
+Information: Removing unused design 'flipflop_38'. (OPT-1055)
+Information: Removing unused design 'mux2to1_0'. (OPT-1055)
+Information: Removing unused design 'mux2to1_1'. (OPT-1055)
+Information: Removing unused design 'mux2to1_2'. (OPT-1055)
+Information: Removing unused design 'mux2to1_3'. (OPT-1055)
+Information: Removing unused design 'mux2to1_4'. (OPT-1055)
+Information: Removing unused design 'mux2to1_5'. (OPT-1055)
+Information: Removing unused design 'mux2to1_6'. (OPT-1055)
+Information: Removing unused design 'mux2to1_7'. (OPT-1055)
+Information: Removing unused design 'mux2to1_8'. (OPT-1055)
+Information: Removing unused design 'mux2to1_9'. (OPT-1055)
+Information: Removing unused design 'mux2to1_10'. (OPT-1055)
+Information: Removing unused design 'mux2to1_11'. (OPT-1055)
+Information: Removing unused design 'mux2to1_12'. (OPT-1055)
+Information: Removing unused design 'mux2to1_13'. (OPT-1055)
+Information: Removing unused design 'mux2to1_14'. (OPT-1055)
+Information: Removing unused design 'mux2to1_15'. (OPT-1055)
+Information: Removing unused design 'mux2to1_16'. (OPT-1055)
+Information: Removing unused design 'mux2to1_17'. (OPT-1055)
+Information: Removing unused design 'mux2to1_18'. (OPT-1055)
+Information: Removing unused design 'lfsr'. (OPT-1055)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'bist_controller'. (DDB-72)
+  Mapping Optimization (Phase 1)
+Begin Combinational loops breaking ...
+	Number of combinational loops found: 0
+End Combinational loops breaking ...
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:05     806.8      0.00       0.0      88.8                           22849.4902
+    0:00:05     806.0      0.00       0.0      88.8                           22821.4434
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:06     586.3      0.00       0.0       8.3                           12022.1201
+    0:00:06     586.3      0.00       0.0       8.3                           12022.1201
+    0:00:06     586.3      0.00       0.0       8.3                           12022.1201
+    0:00:07     585.7      0.00       0.0       8.3                           12007.7666
+Begin Combinational loops breaking ...
+	Number of combinational loops found: 0
+End Combinational loops breaking ...
+    0:00:07     585.5      0.00       0.0       8.3                           11997.3018
+    0:00:07     585.5      0.00       0.0       8.3                           11997.3018
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:07     583.3      0.00       0.0       8.3                           11905.8301
+    0:00:07     583.3      0.00       0.0       8.3                           11905.8301
+    0:00:07     583.3      0.00       0.0       8.3                           11905.8301
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07     583.3      0.00       0.0       8.3                           11885.6875
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+Begin Combinational loops breaking ...
+	Number of combinational loops found: 0
+End Combinational loops breaking ...
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:07     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:08     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:08     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:08     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:08     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:08     583.9      0.00       0.0       0.0                           11906.8867
+    0:00:08     583.9      0.00       0.0       0.0                           11906.8867
+Loading db file '/home/s287758/tft-hw-assignment/syn_system/techlib/NangateOpenCellLibrary_typical_ccs_scan.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+#write -hierarchy -format verilog -output "${GATE_PATH}/${TOPLEVEL}.v"
+report_area > ../report/report_area.txt
+report_timing > ../report/report_timing.txt
+report_power > ../report/report_power.txt
+dc_shell> exit
+
+Memory usage for this session 139 Mbytes.
+Memory usage for this session including child processes 139 Mbytes.
+CPU usage for this session 9 seconds ( 0.00 hours ).
+Elapsed time for this session 443 seconds ( 0.12 hours ).
+
+Thank you...

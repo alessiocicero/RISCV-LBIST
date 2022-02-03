@@ -1,0 +1,51 @@
+Information: Modelling clock gating cell core_clock_gate_i/cgc. Associated lib cell CLKGATETST_X1 has clock gating attribute.
+Information: Starting test point analysis.
+Information: Test Point analysis directory is /home/s287758/tft-hw-assignment/syn/run/_snpDft_s287758.1432.0
+Information: SpyGlass run started at 03:27:13 PM on Jan 13 2022 
+Information: SpyGlass Predictive Analyzer(R) - Version SpyGlass_vR-2020.12
+
+Estimated stuck-at test coverage: 100.00%
+
+Analysis for 'random_resistant' target started.
+ No per-target limit specified.
+ Estimated random pattern test coverage: 60.71%
+ Analyzing top design
+ 8 test points found with estimated random pattern coverage: 67.85%
+ 16 test points found with estimated random pattern coverage: 70.21%
+ 24 test points found with estimated random pattern coverage: 71.72%
+ 32 test points found with estimated random pattern coverage: 72.76%
+ 40 test points found with estimated random pattern coverage: 73.67%
+ 48 test points found with estimated random pattern coverage: 74.53%
+ 56 test points found with estimated random pattern coverage: 75.22%
+ 64 test points found with estimated random pattern coverage: 75.89%
+ 72 test points found with estimated random pattern coverage: 76.45%
+ 80 test points found with estimated random pattern coverage: 77.00%
+ 88 test points found with estimated random pattern coverage: 77.55%
+ 96 test points found with estimated random pattern coverage: 77.95%
+ 104 test points found with estimated random pattern coverage: 78.31%
+ 112 test points found with estimated random pattern coverage: 78.66%
+ 120 test points found with estimated random pattern coverage: 78.97%
+ 128 test points found with estimated random pattern coverage: 79.24%
+ 136 test points found with estimated random pattern coverage: 79.56%
+ 144 test points found with estimated random pattern coverage: 79.78%
+ 152 test points found with estimated random pattern coverage: 79.98%
+ 152 test points found.
+Analysis for 'random_resistant' target completed.
+
+Analysis for 'x_blocking' target started.
+ 0 test points found.
+Analysis for 'x_blocking' target completed.
+
+SpyGlass-DFT Technology Summary:
+ Random pattern test coverage = 79.98% (initially 60.71%)
+ Percentage of scannable flops = 100.0%
+
+
+SpyGlass Message Summary:
+ Reported Messages: 0 Fatals, 0 Errors, 0 Warnings, 22 Infos
+
+Information: SpyGlass critical reports for the current run are present in directory '_snpDft_s287758.1432.0/sg_config/consolidated_reports/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_sg_dft_testpoint_analysis/'.
+
+Information: SpyGlass run completed at 03:47:15 PM on Jan 13 2022
+Information: Test point analysis completed.
+1

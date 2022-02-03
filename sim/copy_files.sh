@@ -1,0 +1,25 @@
+mkdir -p files
+cd ..
+cp src/flipflop.vhd sim/files/.
+cp src/mux2to1.vhd sim/files/.
+cp src/lfsr.vhd sim/files/.
+cp src/misr.vhd sim/files/.
+cp src/bist_controller.vhd sim/files/.
+cp src/bist.vhd sim/files/.
+cp gate/NangateOpenCellLibrary.v sim/files/.
+cp syn/output/riscv_core_scan.v sim/files/.
+cp rtl/include/riscv_config.sv sim/files/.
+cp tb/core/fpnew/src/fpnew_pkg.sv sim/files/.
+cp rtl/include/apu_core_package.sv sim/files/.
+cp rtl/include/riscv_defines.sv sim/files/.
+cp rtl/include/riscv_tracer_defines.sv sim/files/.
+cp tb/tb_riscv/include/perturbation_defines.sv sim/files/.
+cp tb/tb_riscv/riscv_perturbation.sv sim/files/.
+cp tb/tb_riscv/riscv_random_stall.sv sim/files/.
+cp tb/tb_riscv/riscv_random_interrupt_generator.sv sim/files/.
+cp tb/core/riscv_wrapper_gate.sv sim/files/.
+cp tb/core/dp_ram.sv sim/files/.
+cp tb/core/cluster_clock_gating.sv  sim/files/.
+cp tb/core/tb_top.sv sim/files/.
+cp tb/core/mm_ram.sv  sim/files/.
+cp tb/verilator-model/ram.sv sim/files/.

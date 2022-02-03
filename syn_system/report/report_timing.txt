@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : bist
+Version: R-2020.09-SP2
+Date   : Fri Jan 14 18:26:18 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: bist_port/count_vector_unsigned_reg[2]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: bist_port/count_vector_unsigned_reg[19]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bist_port/count_vector_unsigned_reg[2]/CK (DFF_X1)      0.00       0.00 r
+  bist_port/count_vector_unsigned_reg[2]/Q (DFF_X1)       0.10       0.10 r
+  bist_port/U22/ZN (NAND3_X1)                             0.06       0.16 f
+  bist_port/U23/ZN (NOR2_X1)                              0.06       0.22 r
+  bist_port/U24/ZN (NAND2_X1)                             0.05       0.27 f
+  bist_port/U25/ZN (NOR2_X1)                              0.06       0.33 r
+  bist_port/U26/ZN (NAND2_X1)                             0.05       0.38 f
+  bist_port/U27/ZN (NOR2_X1)                              0.06       0.44 r
+  bist_port/U28/ZN (NAND2_X1)                             0.05       0.49 f
+  bist_port/U29/ZN (NOR2_X1)                              0.06       0.55 r
+  bist_port/U30/ZN (NAND2_X1)                             0.05       0.60 f
+  bist_port/U31/ZN (NOR2_X1)                              0.06       0.66 r
+  bist_port/U32/ZN (NAND2_X1)                             0.05       0.71 f
+  bist_port/U33/ZN (NOR2_X1)                              0.06       0.77 r
+  bist_port/U34/ZN (NAND2_X1)                             0.05       0.82 f
+  bist_port/U35/ZN (NOR2_X1)                              0.06       0.88 r
+  bist_port/U36/ZN (NAND2_X1)                             0.04       0.92 f
+  bist_port/U45/ZN (AOI21_X1)                             0.06       0.98 r
+  bist_port/U46/ZN (OAI21_X1)                             0.05       1.03 f
+  bist_port/U47/ZN (AOI21_X1)                             0.06       1.09 r
+  bist_port/U48/ZN (INV_X1)                               0.02       1.12 f
+  bist_port/U49/Z (MUX2_X1)                               0.07       1.18 f
+  bist_port/count_vector_unsigned_reg[19]/D (DFF_X1)      0.01       1.19 f
+  data arrival time                                                  1.19
+
+  clock MY_CLK (rise edge)                               10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.07       9.93
+  bist_port/count_vector_unsigned_reg[19]/CK (DFF_X1)     0.00       9.93 r
+  library setup time                                     -0.04       9.89
+  data required time                                                 9.89
+  --------------------------------------------------------------------------
+  data required time                                                 9.89
+  data arrival time                                                 -1.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.70
+
+
+1

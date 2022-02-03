@@ -1,0 +1,1444 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP2 for linux64 - Dec 03, 2020 
+
+                    Copyright (c) 1988 - 2020 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+set GATE_PATH			../output
+../output
+set LOG_PATH			../log
+../log
+set TECH 			NangateOpenCell
+NangateOpenCell
+set TOPLEVEL			riscv_core
+riscv_core
+set search_path [ join "../techlib/ $search_path" ]
+../techlib/ . /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/dw/syn_ver /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/dw/sim_ver
+set search_path [ join "$GATE_PATH $search_path" ]
+../output ../techlib/ . /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/dw/syn_ver /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/dw/sim_ver
+source ../bin/$TECH.dc_setup_scan.tcl
+Loading db file '/home/s287758/tft-hw-assignment/syn/techlib/NangateOpenCellLibrary_typical_ccs_scan.db'
+Information: Using CCS timing libraries. (TIM-024)
+Loading db file '/eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn/gtech.db'
+Loading db file '/eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Loading db file '/home/s287758/tft-hw-assignment/syn/techlib/NangateOpenCellLibrary_typical_ccs_scan.db'
+Warning: Overwriting design file '/home/s287758/tft-hw-assignment/syn/techlib/NangateOpenCellLibrary_typical_ccs_scan.db'. (DDB-24)
+Loaded 0 designs.
+read_ddc $TOPLEVEL.ddc
+Reading ddc file '/home/s287758/tft-hw-assignment/syn/output/riscv_core.ddc'.
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Loaded 23 designs.
+Current design is 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800'.
+riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800 cluster_clock_gating riscv_if_stage_2_128_0_1a110800 riscv_id_stage_N_HWLP2_PULP_SECURE1_APU0_FPU0_Zfinx0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_MULT0_SHARED_INT_DIV0_SHARED_FP_DIVSQRT0_WAPUTYPE0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5 riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5 riscv_load_store_unit riscv_cs_registers_N_EXT_CNT0_APU0_FPU0_PULP_SECURE1_USE_PMP1_N_PMP_ENTRIES16 riscv_pmp_N_PMP_ENTRIES16 riscv_prefetch_L0_buffer riscv_hwloop_controller_N_REGS2 riscv_compressed_decoder_FPU0 register_file_test_wrap_ADDR_WIDTH6_FPU0_Zfinx0 riscv_decoder_FPU0_FP_DIVSQRT0_PULP_SECURE1_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_MULT0_SHARED_INT_DIV0_SHARED_FP_DIVSQRT0_WAPUTYPE0_APU_WOP_CPU6 riscv_controller_FPU0 riscv_int_controller_PULP_SECURE1 riscv_hwloop_regs_N_REGS2 riscv_alu_SHARED_INT_DIV0_FPU0 riscv_mult_SHARED_DSP_MULT0 riscv_L0_buffer_RDATA_IN_WIDTH128 riscv_register_file_ADDR_WIDTH6_DATA_WIDTH32_FPU0_Zfinx0 alu_popcnt alu_ff riscv_alu_div
+#link
+#check_design
+create_logic_port -direction in test_mode_tp
+test_mode_tp
+compile_ultra -incremental -gate_clock -scan -no_autoungroup
+Loading db file '/eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | R-2020.09-DWBB_202009.2 |     *     |
+| Licensed DW Building Blocks        | R-2020.09-DWBB_202009.2 |     *     |
+============================================================================
+
+
+Information: There are 2098 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Information: Performing clock-gating with positive edge logic: 'integrated' and negative edge logic: 'or'. (PWR-1047)
+
+Loaded alib file './alib-52/NangateOpenCellLibrary_typical_ccs_scan.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Skipping clock gating on design cluster_clock_gating, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design riscv_hwloop_controller_N_REGS2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design riscv_compressed_decoder_FPU0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design register_file_test_wrap_ADDR_WIDTH6_FPU0_Zfinx0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design riscv_decoder_FPU0_FP_DIVSQRT0_PULP_SECURE1_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_MULT0_SHARED_INT_DIV0_SHARED_FP_DIVSQRT0_WAPUTYPE0_APU_WOP_CPU6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design riscv_alu_SHARED_INT_DIV0_FPU0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design alu_popcnt, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design alu_ff, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design riscv_register_file_ADDR_WIDTH6_DATA_WIDTH32_FPU0_Zfinx0. (PWR-730)
+Information: Performing clock-gating on design riscv_cs_registers_N_EXT_CNT0_APU0_FPU0_PULP_SECURE1_USE_PMP1_N_PMP_ENTRIES16. (PWR-730)
+Information: Performing clock-gating on design riscv_id_stage_N_HWLP2_PULP_SECURE1_APU0_FPU0_Zfinx0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_MULT0_SHARED_INT_DIV0_SHARED_FP_DIVSQRT0_WAPUTYPE0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5. (PWR-730)
+Information: Performing clock-gating on design riscv_hwloop_regs_N_REGS2. (PWR-730)
+Information: Performing clock-gating on design riscv_L0_buffer_RDATA_IN_WIDTH128. (PWR-730)
+Information: Performing clock-gating on design riscv_prefetch_L0_buffer. (PWR-730)
+Information: Performing clock-gating on design riscv_load_store_unit. (PWR-730)
+Information: Performing clock-gating on design riscv_alu_div. (PWR-730)
+Information: Performing clock-gating on design riscv_if_stage_2_128_0_1a110800. (PWR-730)
+Information: Performing clock-gating on design riscv_controller_FPU0. (PWR-730)
+Information: Performing clock-gating on design riscv_int_controller_PULP_SECURE1. (PWR-730)
+Information: Performing clock-gating on design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5. (PWR-730)
+Information: Performing clock-gating on design riscv_mult_SHARED_DSP_MULT0. (PWR-730)
+Information: Performing clock-gating on design riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800. (PWR-730)
+Information: Performing clock-gating on design riscv_pmp_N_PMP_ENTRIES16. (PWR-730)
+Information: Automatic shift-register identification is enabled for scan. Not all registers will be scan-replaced. (OPT-467)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:00   63914.5      2.57    1398.5   13782.6                           1350513.8750
+    0:01:08   63893.2      0.88    1296.0   11759.4                           1355705.1250
+    0:01:11   63675.9      0.85    1237.8   11685.4                           1349802.6250
+    0:01:16   63338.6      0.85    1195.5   11248.9                           1338895.1250
+Information: Complementing port 'instr_addr_o_18__BAR' in design 'riscv_pmp_N_PMP_ENTRIES16'.
+	 The new name of the port is 'instr_addr_o_18_'. (OPT-319)
+Information: Complementing port 'instr_addr_o_14__BAR' in design 'riscv_pmp_N_PMP_ENTRIES16'.
+	 The new name of the port is 'instr_addr_o_14_'. (OPT-319)
+Information: Complementing port 'instr_addr_o_4__BAR' in design 'riscv_pmp_N_PMP_ENTRIES16'.
+	 The new name of the port is 'instr_addr_o_4_'. (OPT-319)
+Information: Complementing port 'data_addr_o_31__BAR' in design 'riscv_pmp_N_PMP_ENTRIES16'.
+	 The new name of the port is 'data_addr_o_31_'. (OPT-319)
+Information: Complementing port 'is_decoding_i_BAR' in design 'riscv_cs_registers_N_EXT_CNT0_APU0_FPU0_PULP_SECURE1_USE_PMP1_N_PMP_ENTRIES16'.
+	 The new name of the port is 'is_decoding_i'. (OPT-319)
+Information: Complementing port 'is_decoding_o_BAR' in design 'riscv_id_stage_N_HWLP2_PULP_SECURE1_APU0_FPU0_Zfinx0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_MULT0_SHARED_INT_DIV0_SHARED_FP_DIVSQRT0_WAPUTYPE0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5'.
+	 The new name of the port is 'is_decoding_o'. (OPT-319)
+Information: Complementing port 'is_decoding_o_BAR' in design 'riscv_controller_FPU0'.
+	 The new name of the port is 'is_decoding_o'. (OPT-319)
+Information: Complementing port 'csr_access_i' in design 'riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5'.
+	 The new name of the port is 'csr_access_i_BAR'. (OPT-319)
+Information: Complementing port 'csr_access_i' in design 'riscv_cs_registers_N_EXT_CNT0_APU0_FPU0_PULP_SECURE1_USE_PMP1_N_PMP_ENTRIES16'.
+	 The new name of the port is 'csr_access_i_BAR'. (OPT-319)
+Information: Complementing port 'csr_access_ex_o' in design 'riscv_id_stage_N_HWLP2_PULP_SECURE1_APU0_FPU0_Zfinx0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_MULT0_SHARED_INT_DIV0_SHARED_FP_DIVSQRT0_WAPUTYPE0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5'.
+	 The new name of the port is 'csr_access_ex_o_BAR'. (OPT-319)
+Information: Complementing port 'data_misaligned_ex_i' in design 'riscv_load_store_unit'.
+	 The new name of the port is 'data_misaligned_ex_i_BAR'. (OPT-319)
+Information: Complementing port 'data_misaligned_ex_o' in design 'riscv_id_stage_N_HWLP2_PULP_SECURE1_APU0_FPU0_Zfinx0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_MULT0_SHARED_INT_DIV0_SHARED_FP_DIVSQRT0_WAPUTYPE0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5'.
+	 The new name of the port is 'data_misaligned_ex_o_BAR'. (OPT-319)
+Information: Complementing port 'addr_useincr_ex_i' in design 'riscv_load_store_unit'.
+	 The new name of the port is 'addr_useincr_ex_i_BAR'. (OPT-319)
+Information: Complementing port 'prepost_useincr_ex_o' in design 'riscv_id_stage_N_HWLP2_PULP_SECURE1_APU0_FPU0_Zfinx0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_MULT0_SHARED_INT_DIV0_SHARED_FP_DIVSQRT0_WAPUTYPE0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5'.
+	 The new name of the port is 'prepost_useincr_ex_o_BAR'. (OPT-319)
+    0:01:26   61635.4      0.84    1215.1    9120.2                           1297303.1250
+Information: Complementing port 'mult_imm_mux_o[0]' in design 'riscv_decoder_FPU0_FP_DIVSQRT0_PULP_SECURE1_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_MULT0_SHARED_INT_DIV0_SHARED_FP_DIVSQRT0_WAPUTYPE0_APU_WOP_CPU6'.
+	 The new name of the port is 'mult_imm_mux_o[0]_BAR'. (OPT-319)
+Information: Complementing port 'addr_useincr_ex_i_BAR' in design 'riscv_load_store_unit'.
+	 The new name of the port is 'addr_useincr_ex_i'. (OPT-319)
+Information: Complementing port 'prepost_useincr_ex_o_BAR' in design 'riscv_id_stage_N_HWLP2_PULP_SECURE1_APU0_FPU0_Zfinx0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_MULT0_SHARED_INT_DIV0_SHARED_FP_DIVSQRT0_WAPUTYPE0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5'.
+	 The new name of the port is 'prepost_useincr_ex_o'. (OPT-319)
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:01:35   61634.3      0.84    1216.4    9120.2                           1297253.0000
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:35   61634.3      0.84    1216.4    9120.2                           1297253.0000
+    0:01:43   61386.2      0.84    1214.3    7968.4                           1290674.2500
+    0:01:50   60934.5      0.84    1141.7    6613.6                           1266436.5000
+    0:01:51   60934.5      0.84    1141.7    6613.6                           1266436.5000
+    0:01:51   60942.7      0.81    1125.2    6613.6                           1267063.2500
+    0:01:51   60942.7      0.81    1125.2    6613.6                           1267063.2500
+    0:02:36   61195.2      0.73    1026.8    4583.1                           1273586.7500
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:02:38   61193.3      0.73    1026.7    4583.1                           1273537.2500
+    0:02:48   61234.3      0.72    1022.5    4068.5                           1275575.8750
+    0:02:49   61233.7      0.72    1022.5    4068.5                           1275583.8750
+    0:02:54   61277.1      0.72    1018.6    4232.8                           1277818.8750
+    0:02:54   61277.1      0.72    1018.6    4232.8                           1277818.8750
+    0:03:00   61287.5      0.72    1022.6    4232.8                           1279542.3750
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:00   61287.5      0.72    1022.6    4232.8                           1279542.3750
+    0:03:11   60821.2      0.71     981.8      13.8 instr_req_o               1253590.1250
+    0:03:15   60834.2      0.71     977.6      13.8 id_stage_i/registers_i/riscv_register_file_i/mem_reg_24__23_/D 1253656.7500
+    0:03:17   60844.3      0.71     976.5       0.0                           1253860.0000
+    0:03:26   60790.8      0.71     978.9       0.0                           1250886.5000
+    0:03:27   60790.8      0.71     978.9       0.0                           1250886.5000
+    0:03:27   60791.4      0.71     978.5       0.0                           1250907.6250
+    0:03:27   60791.4      0.71     978.5       0.0                           1250907.6250
+    0:03:35   60832.6      0.71     972.7       0.0                           1252063.7500
+    0:03:35   60832.6      0.71     972.7       0.0                           1252063.7500
+    0:03:35   60832.6      0.71     972.7       0.0                           1252063.7500
+    0:03:35   60832.6      0.71     972.7       0.0                           1252063.7500
+    0:03:36   60832.6      0.71     972.7       0.0                           1252063.7500
+    0:03:41   60854.7      0.70     955.4       0.0                           1252522.0000
+    0:03:53   60906.8      0.70     888.9       0.0                           1253497.1250
+    0:03:59   60930.5      0.70     877.4       0.0                           1254158.3750
+    0:04:02   60944.6      0.70     868.2       0.0                           1254484.3750
+    0:04:05   60973.1      0.70     864.3       0.0                           1255657.7500
+    0:04:07   60992.2      0.70     855.9       0.0                           1256093.0000
+    0:04:11   61004.7      0.70     852.3       0.0                           1256476.7500
+    0:04:15   61015.9      0.70     851.2       0.0                           1257147.6250
+    0:04:24   61012.7      0.70     867.3       0.0                           1257187.7500
+    0:04:25   61012.7      0.70     867.3       0.0                           1257187.7500
+    0:04:25   61012.7      0.70     867.3       0.0                           1257187.7500
+    0:04:25   61012.7      0.70     867.3       0.0                           1257187.7500
+    0:04:30   61018.3      0.70     911.2       0.0                           1257424.6250
+    0:04:30   61018.3      0.70     911.2       0.0                           1257424.6250
+    0:04:31   61018.3      0.70     911.2       0.0                           1257424.6250
+    0:04:31   61018.3      0.70     911.2       0.0                           1257424.6250
+    0:04:31   61018.3      0.70     911.2       0.0                           1257424.6250
+    0:04:35   61018.3      0.70     911.2       0.0                           1257424.6250
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:35   61018.3      0.70     911.2       0.0                           1257424.6250
+    0:04:44   61019.6      0.70     911.1       0.0                           1257422.0000
+    0:04:53   60794.6      0.70     914.3       0.0                           1251065.5000
+    0:05:01   60644.8      0.70     903.5       0.0                           1245275.3750
+    0:05:02   60639.0      0.70     903.4       0.0                           1244808.7500
+    0:05:13   60378.0      0.73     984.6       0.0                           1234853.2500
+    0:05:15   60386.5      0.71     976.0       0.0                           1235203.6250
+    0:05:16   60386.3      0.71     975.3       0.0                           1235203.6250
+    0:05:16   60386.3      0.71     975.3       0.0                           1235203.6250
+    0:05:21   60410.5      0.70     963.4       0.0                           1236353.8750
+    0:05:21   60410.5      0.70     963.4       0.0                           1236353.8750
+    0:05:22   60410.5      0.70     963.4       0.0                           1236353.8750
+    0:05:22   60410.5      0.70     963.4       0.0                           1236353.8750
+    0:05:22   60410.5      0.70     963.4       0.0                           1236353.8750
+    0:05:22   60410.5      0.70     963.4       0.0                           1236353.8750
+    0:05:28   60408.3      0.70     962.7      38.8                           1236255.7500
+    0:05:32   60407.8      0.70     962.7      38.8                           1236217.1250
+    0:05:32   60407.8      0.70     962.7      38.8                           1236217.1250
+    0:05:33   60407.8      0.70     962.7      38.8                           1236217.1250
+    0:05:33   60407.8      0.70     962.7      38.8                           1236217.1250
+    0:05:39   60397.2      0.70     961.9      39.3                           1235557.1250
+Loading db file '/home/s287758/tft-hw-assignment/syn/techlib/NangateOpenCellLibrary_typical_ccs_scan.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'ex_stage_i/alu_i/int_div_div_i/Rst_RBI': 3031 load(s), 1 driver(s)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+set_dft_clock_gating_pin [get_cells * -hierarchical -filter "@ref_name =~ SNPS_CLOCK_GATE*"] -pin_name TE
+Accepted clock gating pin specification
+1
+report_area
+ 
+****************************************
+Report : area
+Design : riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800
+Version: R-2020.09-SP2
+Date   : Thu Jan 13 15:26:38 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/s287758/tft-hw-assignment/syn/techlib/NangateOpenCellLibrary_typical_ccs_scan.db)
+
+Number of ports:                         8589
+Number of nets:                         54205
+Number of cells:                        45526
+Number of combinational cells:          36133
+Number of sequential cells:              3125
+Number of macros/black boxes:               0
+Number of buf/inv:                       6018
+Number of references:                      15
+
+Combinational area:              39765.670087
+Buf/Inv area:                     3480.876017
+Noncombinational area:           20631.492204
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 60397.162291
+Total area:                 undefined
+1
+#set_dft_configuration -scan_compression enable
+set_dft_configuration -testability enable
+Accepted dft configuration specification.
+1
+set test_default_scan_style multiplexed_flip_flop
+multiplexed_flip_flop
+set_scan_element false NangateOpenCellLibrary/DLH_X1
+1
+### Set pins functionality ###
+set_dft_signal -view existing_dft -type Constant -active_state 1 -port test_mode_tp
+Accepted dft signal specification for modes: all_dft
+1
+set_dft_signal -view spec -type TestMode -active_state 1 -port test_mode_tp
+Accepted dft signal specification for modes: all_dft
+1
+set_dft_signal  -view existing_dft -type ScanEnable -port test_en_i
+Accepted dft signal specification for modes: all_dft
+1
+set_dft_signal  -view spec -type ScanEnable -port test_en_i 
+Accepted dft signal specification for modes: all_dft
+1
+#set_dft_configuration -testability enable
+#set_testability_configuration -target core_wrapper
+#configure global automatic
+set_testability_configuration -control_signal test_mode_tp -test_points_per_scan_cell 18
+Information: Creating global testability configuration for all targets.
+Accepted testability configuration specification for design 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800'.
+1
+#enable and configure
+set_testability_configuration -target random_resistant -random_pattern_count 1100
+Information: Creating testability configuration for target 'random_resistant'.
+Accepted testability configuration specification for design 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800'.
+1
+set_testability_configuration -target x_blocking
+Information: Creating testability configuration for target 'x_blocking'.
+Accepted testability configuration specification for design 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800'.
+1
+set_scan_configuration -chain_count 20
+Accepted scan configuration for modes: all_dft
+1
+#set_scan_configuration -chain_count 1
+#set_scan_compression_configuration -chain_count 10
+#preview test points
+create_test_protocol -infer_asynch -infer_clock
+In mode: all_dft...
+
+Information: Starting test protocol creation. (TEST-219)
+  ...inferring clock signals...
+Information: Inferred system/test clock port clk_i (45.0,55.0). (TEST-260)
+  ...inferring asynchronous signals...
+Information: Inferred active low asynchronous control port rst_ni. (TEST-261)
+1
+dft_drc
+In mode: all_dft...
+  Pre-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  	...checking for scan equivalents...
+  ...checking vector rules...
+  ...checking pre-dft rules...
+
+-----------------------------------------------------------------
+Begin Pre-DFT violations...
+
+Warning: Clock gating cell if_stage_i/clk_gate_instr_rdata_id_o_reg_17_ has unconnected test pin. (TEST-130)
+Information: There are 96 other cells with the same violation. (TEST-171)
+
+Pre-DFT violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 194
+
+-----------------------------------------------------------------
+
+97 PRE-DFT VIOLATIONS
+    97 Test pin of clock gating cell is unconnected violations (TEST-130)
+
+
+Warning: Violations occurred during test design rule checking. (TEST-124)
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  98 out of 3125 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITH VIOLATIONS
+      *  98 cells are clock gating cells
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      *3027 cells are valid scan cells
+
+Information: Test design rule checking completed. (TEST-123)
+1
+#preview_dft
+##Added to preview the test points
+run_test_point_analysis > ../reports/test_point_analyisis.txt
+preview_dft -test_points all > ../reports/preview_test_points.txt
+insert_dft
+Warning: Design 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Starting test design rule checking. (TEST-222)
+Warning: Violations occurred during test design rule checking. (TEST-124)
+Information: Test design rule checking completed. (TEST-123)
+Warning: No valid test points found in test point file for target 'x_blocking'.
+  Architecting Scan Chains
+* "/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7.v" file correctly generated *
+Writing test model file '/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7.ctl'...
+Loading verilog file '/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7.v
+
+Inferred memory devices in process
+	in routine riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7 line 32 in file
+		'/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       dtc_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Removing netlist file '/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7.v'...
+Removing test model file '/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7.ctl'...
+  Structuring 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7'
+  Mapping 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7'
+* "/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7_0.v" file correctly generated *
+Writing test model file '/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7_0.ctl'...
+Loading verilog file '/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7_0.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7_0.v
+
+Inferred memory devices in process
+	in routine riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7_0 line 32 in file
+		'/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7_0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       dtc_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Removing netlist file '/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7_0.v'...
+Removing test model file '/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7_0.ctl'...
+  Structuring 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7_0'
+  Mapping 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_7_0'
+* "/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_3.v" file correctly generated *
+Writing test model file '/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_3.ctl'...
+Loading verilog file '/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_3.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_3.v
+
+Inferred memory devices in process
+	in routine riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_3 line 31 in file
+		'/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_3.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       dtc_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Removing netlist file '/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_3.v'...
+Removing test model file '/home/s287758/tft-hw-assignment/syn/run/riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_3.ctl'...
+  Structuring 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_3'
+  Mapping 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800_tp_sdtc_3'
+Information: Starting Test Point Routing
+Information: Test Point Routing Complete.
+  Routing Scan Chains
+  Routing Global Signals
+Warning: Disconnecting pin 'RISCY_PMP_pmp_unit_i/U_dft_tp_sdtc_ip_0/SE' to route scan enable. (TEST-394)
+Warning: Disconnecting pin 'RISCY_PMP_pmp_unit_i/U_dft_tp_sdtc_ip_1/SE' to route scan enable. (TEST-394)
+Warning: Disconnecting pin 'RISCY_PMP_pmp_unit_i/U_dft_tp_sdtc_ip_2/SE' to route scan enable. (TEST-394)
+Warning: Disconnecting pin 'RISCY_PMP_pmp_unit_i/U_dft_tp_sdtc_ip_3/SE' to route scan enable. (TEST-394)
+Warning: Disconnecting pin 'RISCY_PMP_pmp_unit_i/U_dft_tp_sdtc_ip_4/SE' to route scan enable. (TEST-394)
+Warning: Disconnecting pin 'RISCY_PMP_pmp_unit_i/U_dft_tp_sdtc_ip_5/SE' to route scan enable. (TEST-394)
+Warning: Disconnecting pin 'id_stage_i/U_dft_tp_sdtc_ip_8/SE' to route scan enable. (TEST-394)
+Warning: Disconnecting pin 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800/U_dft_tp_sdtc_ip_6/SE' to route scan enable. (TEST-394)
+Warning: Disconnecting pin 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800/U_dft_tp_sdtc_ip_7/SE' to route scan enable. (TEST-394)
+Warning: Disconnecting pin 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800/U_dft_tp_sdtc_ip_9/SE' to route scan enable. (TEST-394)
+  Mapping New Logic
+Resetting current test mode
+Warning: Design 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+  Beginning Mapping Optimizations
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+
+
+  Beginning Phase 1 Design Rule Fixing  (max_transition)  (max_capacitance)
+  ------------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:47   60791.1      0.96    1152.9      39.3 if_stage_i/hwloop_controller_i/hwlp_dec_cnt_o_0_
+    0:00:47   60791.1      0.96    1152.9      39.3 if_stage_i/hwloop_controller_i/hwlp_dec_cnt_o_0_
+    0:00:47   60791.1      0.96    1152.9      39.3 if_stage_i/hwloop_controller_i/hwlp_dec_cnt_o_0_
+    0:00:47   60792.7      0.96    1152.9      13.3 ex_stage_i/mult_i/n5615  
+    0:00:47   60792.7      0.96    1152.9      13.3 ex_stage_i/mult_i/n5615  
+    0:00:47   60792.7      0.96    1152.9      13.3 ex_stage_i/mult_i/n5615  
+    0:00:47   60793.8      0.96    1152.9       0.6 ex_stage_i/mult_i/n38    
+    0:00:47   60795.4      0.96    1152.9       0.0 ex_stage_i/mult_i/n4731  
+    0:00:47   60795.4      0.96    1152.9       0.0 ex_stage_i/mult_i/n4731  
+    0:00:47   60795.4      0.96    1152.9       0.0 ex_stage_i/mult_i/n4731  
+    0:00:47   60795.4      0.96    1152.9       0.0 ex_stage_i/mult_i/n4731  
+    0:00:47   60795.4      0.95    1153.0       0.0 instr_req_o              
+    0:00:47   60795.4      0.95    1153.0       0.0 instr_req_o              
+    0:00:48   60795.9      0.95    1152.9       0.0 instr_req_o              
+    0:00:48   60795.9      0.95    1152.9       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:48   60799.4      0.89    1077.2       0.0 instr_req_o              
+    0:00:49   60799.4      0.89    1077.0       0.0 if_stage_i/prefetch_128_prefetch_buffer_i/clk_gate_rdata_last_q_reg_15_/latch/E
+    0:00:49   60799.4      0.89    1076.3       0.0 instr_req_o              
+    0:00:49   60799.4      0.89    1076.3       0.0 instr_req_o              
+    0:00:49   60799.4      0.89    1076.1       0.0 instr_req_o              
+    0:00:49   60799.4      0.89    1076.1       0.0 instr_req_o              
+    0:00:49   60799.4      0.89    1076.3       0.0 instr_req_o              
+    0:00:49   60799.4      0.89    1076.3       0.0 instr_req_o              
+    0:00:50   60801.7      0.88    1076.3       0.0 instr_req_o              
+    0:00:50   60801.7      0.88    1076.3       0.0 instr_req_o              
+    0:00:50   60801.7      0.88    1076.3       0.0 instr_req_o              
+    0:00:50   60801.7      0.88    1076.3       0.0 instr_req_o              
+    0:00:50   60801.7      0.88    1076.3       0.0 instr_req_o              
+    0:00:50   60802.3      0.88    1076.3       0.0 instr_req_o              
+    0:00:50   60802.3      0.88    1076.3       0.0 instr_req_o              
+    0:00:50   60802.3      0.88    1076.3       0.0 instr_req_o              
+    0:00:50   60802.3      0.88    1076.3       0.0 instr_req_o              
+    0:00:50   60802.3      0.88    1076.3       0.0 instr_req_o              
+    0:00:50   60802.3      0.88    1076.4       0.0 instr_req_o              
+    0:00:50   60802.3      0.88    1076.4       0.0 instr_req_o              
+    0:00:50   60802.3      0.88    1076.4       0.0 instr_req_o              
+    0:00:50   60804.1      0.88    1075.6       0.0 instr_req_o              
+    0:00:50   60804.1      0.88    1075.6       0.0 instr_req_o              
+    0:00:50   60804.1      0.88    1075.6       0.0 instr_req_o              
+    0:00:50   60804.1      0.88    1075.6       0.0 instr_req_o              
+    0:00:50   60804.1      0.88    1075.6       0.0 instr_req_o              
+    0:00:50   60804.1      0.88    1075.6       0.0 instr_req_o              
+    0:00:50   60804.1      0.88    1075.6       0.0 instr_req_o              
+    0:00:50   60804.1      0.88    1075.6       0.0 instr_req_o              
+    0:00:51   60804.9      0.88    1075.6       0.0 instr_req_o              
+    0:00:51   60804.9      0.88    1075.6       0.0 instr_req_o              
+    0:00:51   60804.9      0.88    1075.6       0.0 instr_req_o              
+    0:00:51   60804.9      0.88    1075.6       0.0 instr_req_o              
+    0:00:51   60807.9      0.88    1075.4       0.0 if_stage_i/prefetch_128_prefetch_buffer_i/clk_gate_rdata_last_q_reg_15_/latch/E
+    0:00:51   60807.9      0.88    1075.4       0.0 if_stage_i/prefetch_128_prefetch_buffer_i/clk_gate_rdata_last_q_reg_15_/latch/E
+    0:00:51   60807.9      0.88    1075.4       0.0 if_stage_i/prefetch_128_prefetch_buffer_i/clk_gate_rdata_last_q_reg_15_/latch/E
+    0:00:51   60807.9      0.88    1075.4       0.0 if_stage_i/prefetch_128_prefetch_buffer_i/clk_gate_rdata_last_q_reg_15_/latch/E
+    0:00:51   60807.9      0.88    1075.4       0.0 if_stage_i/prefetch_128_prefetch_buffer_i/clk_gate_rdata_last_q_reg_15_/latch/E
+    0:00:51   60807.9      0.88    1075.4       0.0 if_stage_i/prefetch_128_prefetch_buffer_i/clk_gate_rdata_last_q_reg_15_/latch/E
+    0:00:51   60810.0      0.88    1075.4       0.0 instr_req_o              
+    0:00:51   60810.0      0.88    1075.4       0.0 instr_req_o              
+    0:00:51   60810.0      0.88    1075.4       0.0 instr_req_o              
+    0:00:51   60810.0      0.88    1075.4       0.0 instr_req_o              
+    0:00:51   60810.0      0.88    1075.4       0.0 instr_req_o              
+    0:00:51   60810.5      0.88    1075.4       0.0 instr_req_o              
+    0:00:51   60810.5      0.88    1075.4       0.0 instr_req_o              
+    0:00:51   60811.1      0.88    1074.1       0.0 instr_req_o              
+    0:00:51   60811.1      0.88    1074.1       0.0 instr_req_o              
+    0:00:51   60811.1      0.88    1074.1       0.0 instr_req_o              
+    0:00:51   60811.1      0.87    1074.1       0.0 instr_req_o              
+    0:00:52   60811.1      0.87    1074.1       0.0 instr_req_o              
+    0:00:52   60811.1      0.87    1074.1       0.0 instr_req_o              
+    0:00:52   60811.1      0.87    1074.1       0.0 instr_req_o              
+    0:00:52   60811.1      0.87    1073.9       0.0 instr_req_o              
+    0:00:52   60811.1      0.87    1073.9       0.0 instr_req_o              
+    0:00:52   60811.1      0.87    1073.7       0.0 instr_req_o              
+    0:00:52   60812.1      0.87    1073.6       0.0 instr_req_o              
+    0:00:52   60812.1      0.87    1073.6       0.0 instr_req_o              
+    0:00:52   60812.1      0.87    1073.6       0.0 instr_req_o              
+    0:00:52   60812.1      0.87    1073.6       0.0 instr_req_o              
+    0:00:52   60812.1      0.87    1073.5       0.0 instr_req_o              
+    0:00:52   60812.1      0.87    1073.5       0.0 instr_req_o              
+    0:00:52   60813.2      0.87    1073.1       0.0 instr_req_o              
+    0:00:52   60813.2      0.87    1073.1       0.0 instr_req_o              
+    0:00:52   60813.2      0.87    1073.1       0.0 instr_req_o              
+    0:00:52   60813.2      0.87    1073.1       0.0 instr_req_o              
+    0:00:52   60813.2      0.87    1073.1       0.0 instr_req_o              
+    0:00:52   60813.2      0.87    1073.1       0.0 instr_req_o              
+    0:00:52   60813.2      0.87    1073.0       0.0 instr_req_o              
+    0:00:53   60813.2      0.87    1072.9       0.0 instr_req_o              
+    0:00:53   60813.2      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60813.2      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60812.9      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60812.9      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60812.9      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60812.9      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60812.9      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60812.9      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60812.9      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60814.0      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60814.0      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60814.0      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60814.0      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60814.0      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60814.0      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60814.0      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60814.0      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60814.5      0.86    1073.0       0.0 instr_req_o              
+    0:00:53   60814.5      0.86    1073.0       0.0 instr_req_o              
+    0:00:53   60813.5      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60814.5      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60814.5      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60814.5      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60815.0      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60815.0      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60815.0      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60817.2      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60817.2      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60817.2      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60817.2      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60817.2      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60817.2      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60817.2      0.86    1072.9       0.0 instr_req_o              
+    0:00:53   60817.2      0.86    1072.9       0.0 instr_req_o              
+    0:00:54   60817.2      0.86    1072.6       0.0 instr_req_o              
+    0:00:54   60826.0      0.85    1072.4       0.0 instr_req_o              
+    0:00:54   60829.4      0.85    1072.0       0.0 instr_req_o              
+    0:00:54   60829.4      0.85    1072.0       0.0 instr_req_o              
+    0:00:54   60829.4      0.85    1072.0       0.0 instr_req_o              
+    0:00:54   60829.4      0.85    1072.0       0.0 instr_req_o              
+    0:00:54   60829.4      0.85    1072.0       0.0 instr_req_o              
+    0:00:54   60829.4      0.85    1072.0       0.0 instr_req_o              
+    0:00:54   60829.4      0.85    1072.0       0.0 instr_req_o              
+    0:00:54   60829.4      0.85    1072.0       0.0 instr_req_o              
+    0:00:54   60829.4      0.85    1072.0       0.0 instr_req_o              
+    0:00:54   60829.4      0.85    1072.0       0.0 instr_req_o              
+    0:00:54   60829.4      0.85    1072.0       0.0 instr_req_o              
+    0:00:54   60829.4      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60831.5      0.85    1072.3       0.0 instr_req_o              
+    0:00:55   60831.5      0.85    1072.3       0.0 instr_req_o              
+    0:00:55   60831.5      0.85    1072.3       0.0 instr_req_o              
+    0:00:55   60831.5      0.85    1072.3       0.0 instr_req_o              
+    0:00:55   60831.5      0.85    1072.3       0.0 instr_req_o              
+    0:00:55   60831.5      0.85    1072.3       0.0 instr_req_o              
+    0:00:55   60831.5      0.85    1072.3       0.0 instr_req_o              
+    0:00:55   60831.5      0.85    1072.3       0.0 instr_req_o              
+    0:00:55   60837.7      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60837.7      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60837.7      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60837.7      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60837.7      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60837.7      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60837.7      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60837.7      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60837.7      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60837.7      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60837.7      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60838.2      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60838.2      0.85    1072.0       0.0 instr_req_o              
+    0:00:55   60837.1      0.85    1070.7       0.0 instr_req_o              
+    0:00:55   60837.1      0.85    1070.7       0.0 instr_req_o              
+    0:00:55   60837.1      0.85    1070.7       0.0 instr_req_o              
+    0:00:55   60837.1      0.85    1070.6       0.0 instr_req_o              
+    0:00:55   60837.1      0.85    1070.6       0.0 instr_req_o              
+    0:00:55   60837.1      0.85    1070.6       0.0 instr_req_o              
+    0:00:55   60837.1      0.85    1070.6       0.0 instr_req_o              
+    0:00:56   60837.7      0.85    1070.6       0.0 instr_req_o              
+    0:00:56   60837.7      0.85    1070.6       0.0 instr_req_o              
+    0:00:56   60837.7      0.85    1069.6       0.0 instr_req_o              
+    0:00:56   60838.7      0.84    1067.7       0.0 instr_req_o              
+    0:00:56   60838.7      0.84    1067.7       0.0 instr_req_o              
+    0:00:56   60838.7      0.84    1067.7       0.0 instr_req_o              
+    0:00:56   60838.7      0.84    1067.7       0.0 instr_req_o              
+    0:00:56   60840.1      0.84    1067.4       0.0 instr_req_o              
+    0:00:56   60840.1      0.84    1067.4       0.0 instr_req_o              
+    0:00:56   60839.0      0.84    1065.8       0.0 instr_req_o              
+    0:00:57   60839.0      0.84    1065.8       0.0 instr_req_o              
+    0:00:57   60839.0      0.84    1065.8       0.0 instr_req_o              
+    0:00:57   60839.0      0.84    1065.8       0.0 instr_req_o              
+    0:00:57   60839.0      0.84    1065.8       0.0 instr_req_o              
+    0:00:57   60839.0      0.84    1057.0       0.0 instr_req_o              
+    0:00:57   60839.0      0.83    1056.8       0.0 instr_req_o              
+    0:00:58   60839.0      0.83    1061.8       0.0 instr_req_o              
+    0:00:58   60839.0      0.83    1061.8       0.0 instr_req_o              
+    0:00:58   60839.8      0.83    1061.8       0.0 instr_req_o              
+    0:00:58   60839.8      0.83    1061.8       0.0 instr_req_o              
+    0:00:58   60839.8      0.83    1061.8       0.0 instr_req_o              
+    0:00:58   60839.8      0.83    1061.8       0.0 instr_req_o              
+    0:00:59   60845.4      0.83    1059.6       0.0 instr_req_o              
+    0:00:59   60845.4      0.83    1059.6       0.0 instr_req_o              
+    0:00:59   60845.4      0.83    1059.6       0.0 instr_req_o              
+    0:00:59   60845.4      0.83    1059.6       0.0 instr_req_o              
+    0:00:59   60845.4      0.83    1059.6       0.0 instr_req_o              
+    0:00:59   60845.4      0.83    1059.6       0.0 instr_req_o              
+    0:00:59   60845.4      0.83    1059.6       0.0 instr_req_o              
+    0:00:59   60845.4      0.83    1059.6       0.0 instr_req_o              
+    0:00:59   60845.4      0.83    1059.6       0.0 instr_req_o              
+    0:00:59   60845.4      0.83    1059.6       0.0 instr_req_o              
+    0:00:59   60845.4      0.83    1059.6       0.0 instr_req_o              
+    0:00:59   60845.4      0.83    1059.6       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.3       0.0 instr_req_o              
+    0:01:00   60845.4      0.83    1059.2       0.0 instr_req_o              
+    0:01:00   60845.9      0.83    1059.1       0.0 instr_req_o              
+    0:01:00   60845.9      0.83    1059.1       0.0 instr_req_o              
+    0:01:00   60847.0      0.83    1059.1       0.0 instr_req_o              
+    0:01:00   60847.0      0.83    1059.1       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1059.1       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1059.1       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1059.1       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1059.1       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1059.1       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1059.1       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.83    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.82    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.82    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.82    1058.9       0.0 instr_req_o              
+    0:01:01   60847.8      0.82    1058.9       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.7       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.7       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.7       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.7       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.7       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.7       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:01   60854.4      0.82    1057.8       0.0 instr_req_o              
+    0:01:02   60854.4      0.82    1057.6       0.0 instr_req_o              
+    0:01:02   60854.4      0.82    1057.6       0.0 instr_req_o              
+    0:01:02   60857.9      0.81    1038.7       0.0 instr_req_o              
+    0:01:02   60857.9      0.81    1038.7       0.0 instr_req_o              
+    0:01:02   60857.9      0.81    1038.7       0.0 instr_req_o              
+    0:01:02   60857.9      0.81    1038.7       0.0 instr_req_o              
+    0:01:02   60862.4      0.80    1035.2       0.0 id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__31_/D
+    0:01:02   60862.4      0.80    1035.2       0.0 id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__31_/D
+    0:01:02   60862.4      0.80    1035.2       0.0 id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__31_/D
+    0:01:02   60862.4      0.80    1035.2       0.0 id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__31_/D
+    0:01:02   60862.4      0.80    1035.2       0.0 id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__31_/D
+    0:01:02   60862.4      0.80    1035.2       0.0 id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__31_/D
+    0:01:02   60862.4      0.80    1035.2       0.0 id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__31_/D
+    0:01:02   60862.4      0.80    1035.2       0.0 id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__31_/D
+    0:01:02   60862.4      0.80    1035.2       0.0 id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__31_/D
+    0:01:02   60862.4      0.80    1035.2       0.0 id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__31_/D
+    0:01:03   60864.8      0.80    1034.3       0.0 instr_req_o              
+    0:01:03   60864.8      0.80    1034.3       0.0 instr_req_o              
+    0:01:03   60864.8      0.80    1034.3       0.0 instr_req_o              
+    0:01:03   60864.8      0.80    1034.3       0.0 instr_req_o              
+    0:01:03   60864.8      0.80    1034.3       0.0 instr_req_o              
+    0:01:03   60864.8      0.80    1034.3       0.0 instr_req_o              
+    0:01:03   60864.8      0.80    1034.3       0.0 instr_req_o              
+    0:01:03   60865.1      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60865.1      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60865.1      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60865.1      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60865.1      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.8       0.0 instr_req_o              
+    0:01:03   60869.0      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60869.0      0.80    1033.7       0.0 instr_req_o              
+    0:01:04   60869.0      0.80    1033.7       0.0 instr_req_o              
+    0:01:04   60868.8      0.80    1033.7       0.0 instr_req_o              
+    0:01:04   60868.8      0.80    1033.7       0.0 instr_req_o              
+    0:01:04   60874.1      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.80    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.79    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.79    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.79    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.79    1033.6       0.0 instr_req_o              
+    0:01:04   60874.1      0.79    1039.2       0.0 instr_req_o              
+    0:01:04   60874.1      0.79    1039.2       0.0 instr_req_o              
+    0:01:04   60874.1      0.79    1039.2       0.0 instr_req_o              
+    0:01:04   60874.1      0.79    1039.2       0.0 instr_req_o              
+    0:01:04   60874.1      0.79    1039.2       0.0 instr_req_o              
+    0:01:05   60874.1      0.79    1039.2       0.0 instr_req_o              
+    0:01:05   60874.1      0.79    1039.0       0.0 instr_req_o              
+    0:01:05   60874.1      0.79    1038.5       0.0 instr_req_o              
+    0:01:05   60874.1      0.79    1038.5       0.0 instr_req_o              
+    0:01:05   60874.1      0.79    1038.4       0.0 instr_req_o              
+    0:01:05   60875.2      0.79    1038.4       0.0 instr_req_o              
+    0:01:05   60875.2      0.79    1038.4       0.0 instr_req_o              
+    0:01:05   60875.2      0.79    1038.4       0.0 instr_req_o              
+    0:01:05   60875.2      0.79    1038.4       0.0 instr_req_o              
+    0:01:05   60875.2      0.79    1038.4       0.0 instr_req_o              
+    0:01:05   60875.2      0.79    1038.4       0.0 instr_req_o              
+    0:01:05   60875.2      0.79    1038.4       0.0 instr_req_o              
+    0:01:05   60875.2      0.78    1038.3       0.0 instr_req_o              
+    0:01:05   60875.2      0.78    1038.3       0.0 instr_req_o              
+    0:01:05   60875.2      0.78    1038.3       0.0 instr_req_o              
+    0:01:05   60875.2      0.78    1038.3       0.0 instr_req_o              
+    0:01:05   60875.2      0.78    1038.3       0.0 instr_req_o              
+    0:01:05   60876.2      0.78    1038.2       0.0 instr_req_o              
+    0:01:05   60876.2      0.78    1038.2       0.0 instr_req_o              
+    0:01:05   60876.2      0.78    1038.2       0.0 instr_req_o              
+    0:01:05   60876.2      0.78    1038.2       0.0 instr_req_o              
+    0:01:06   60876.2      0.78    1038.3       0.0 instr_req_o              
+    0:01:06   60876.2      0.78    1038.3       0.0 instr_req_o              
+    0:01:06   60876.2      0.78    1038.3       0.0 instr_req_o              
+    0:01:06   60876.2      0.78    1038.3       0.0 instr_req_o              
+    0:01:06   60876.2      0.78    1038.3       0.0 instr_req_o              
+    0:01:06   60876.2      0.78    1038.2       0.0 instr_req_o              
+    0:01:06   60878.4      0.78    1038.2       0.0 instr_req_o              
+    0:01:06   60878.4      0.78    1038.2       0.0 instr_req_o              
+    0:01:06   60878.4      0.78    1038.2       0.0 instr_req_o              
+    0:01:06   60878.4      0.78    1038.2       0.0 instr_req_o              
+    0:01:06   60879.4      0.78    1037.8       0.0 instr_req_o              
+    0:01:06   60879.4      0.78    1037.8       0.0 instr_req_o              
+    0:01:06   60879.4      0.78    1037.8       0.0 instr_req_o              
+    0:01:06   60880.5      0.78    1037.7       0.0 instr_req_o              
+    0:01:06   60880.5      0.78    1037.7       0.0 instr_req_o              
+    0:01:06   60880.5      0.78    1037.7       0.0 instr_req_o              
+    0:01:06   60879.7      0.78    1037.7       0.0 instr_req_o              
+    0:01:06   60879.7      0.78    1037.7       0.0 instr_req_o              
+    0:01:06   60879.7      0.78    1037.7       0.0 instr_req_o              
+    0:01:06   60880.8      0.78    1036.3       0.0 instr_req_o              
+    0:01:06   60880.8      0.78    1036.3       0.0 instr_req_o              
+    0:01:06   60880.8      0.78    1036.3       0.0 instr_req_o              
+    0:01:06   60880.8      0.78    1036.3       0.0 instr_req_o              
+    0:01:06   60880.8      0.78    1036.3       0.0 instr_req_o              
+    0:01:06   60880.8      0.78    1036.1       0.0 instr_req_o              
+    0:01:06   60880.8      0.78    1036.1       0.0 instr_req_o              
+    0:01:06   60883.4      0.77    1035.8       0.0 instr_req_o              
+    0:01:06   60883.4      0.77    1035.8       0.0 instr_req_o              
+    0:01:06   60883.4      0.77    1035.8       0.0 instr_req_o              
+    0:01:06   60883.4      0.77    1035.8       0.0 instr_req_o              
+    0:01:06   60883.4      0.77    1035.8       0.0 instr_req_o              
+    0:01:06   60883.4      0.77    1035.8       0.0 instr_req_o              
+    0:01:06   60883.4      0.77    1035.8       0.0 instr_req_o              
+    0:01:07   60883.4      0.77    1035.8       0.0 instr_req_o              
+    0:01:07   60883.4      0.77    1035.8       0.0 instr_req_o              
+    0:01:07   60883.4      0.77    1035.8       0.0 instr_req_o              
+    0:01:07   60883.4      0.77    1035.8       0.0 instr_req_o              
+    0:01:07   60883.4      0.77    1035.8       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.9      0.77    1035.5       0.0 instr_req_o              
+    0:01:07   60887.7      0.77    1033.7       0.0 instr_req_o              
+    0:01:07   60888.7      0.77    1033.7       0.0 instr_req_o              
+    0:01:07   60888.7      0.77    1033.7       0.0 instr_req_o              
+    0:01:08   60889.8      0.77    1033.4       0.0 instr_req_o              
+    0:01:08   60889.8      0.77    1033.4       0.0 instr_req_o              
+    0:01:08   60889.8      0.77    1033.4       0.0 instr_req_o              
+    0:01:08   60889.8      0.77    1033.4       0.0 instr_req_o              
+    0:01:08   60889.8      0.77    1033.4       0.0 instr_req_o              
+    0:01:08   60889.8      0.77    1033.4       0.0 instr_req_o              
+    0:01:08   60889.8      0.77    1033.4       0.0 instr_req_o              
+    0:01:08   60889.8      0.77    1033.4       0.0 instr_req_o              
+    0:01:08   60889.8      0.77    1033.4       0.0 instr_req_o              
+    0:01:08   60889.8      0.77    1033.4       0.0 instr_req_o              
+    0:01:08   60889.8      0.77    1033.4       0.0 instr_req_o              
+    0:01:08   60889.8      0.77    1033.4       0.0 instr_req_o              
+    0:01:08   60890.3      0.76    1033.4       0.0 instr_req_o              
+    0:01:08   60890.3      0.76    1033.4       0.0 instr_req_o              
+    0:01:08   60890.3      0.76    1033.4       0.0 instr_req_o              
+    0:01:08   60890.3      0.76    1033.4       0.0 instr_req_o              
+    0:01:08   60890.3      0.76    1033.4       0.0 instr_req_o              
+    0:01:08   60890.3      0.76    1033.4       0.0 instr_req_o              
+    0:01:08   60890.6      0.76    1033.3       0.0 instr_req_o              
+    0:01:08   60890.6      0.76    1033.3       0.0 instr_req_o              
+    0:01:08   60890.6      0.76    1033.3       0.0 instr_req_o              
+    0:01:08   60890.6      0.76    1033.3       0.0 instr_req_o              
+    0:01:08   60890.6      0.76    1033.3       0.0 instr_req_o              
+    0:01:08   60891.4      0.76    1033.2       0.0 instr_req_o              
+    0:01:08   60891.4      0.76    1033.2       0.0 instr_req_o              
+    0:01:08   60891.4      0.76    1033.2       0.0 instr_req_o              
+    0:01:08   60891.4      0.76    1033.2       0.0 instr_req_o              
+    0:01:08   60890.3      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.3      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.3      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.3      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.3      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.3      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.3      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.3      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60891.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:09   60891.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:09   60891.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:09   60891.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:09   60891.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:09   60891.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:09   60890.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:10   60890.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:10   60890.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:10   60890.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:10   60891.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:10   60891.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:10   60891.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:10   60891.9      0.76    1033.2       0.0 instr_req_o              
+    0:01:10   60891.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:10   60891.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:10   60891.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:10   60891.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:11   60891.9      0.76    1033.1       0.0 instr_req_o              
+    0:01:12   60893.0      0.76    1033.0       0.0 instr_req_o              
+    0:01:12   60893.0      0.76    1033.0       0.0 instr_req_o              
+    0:01:12   60893.0      0.76    1033.0       0.0 instr_req_o              
+    0:01:12   60893.0      0.76    1033.0       0.0 instr_req_o              
+    0:01:12   60893.0      0.76    1033.0       0.0 instr_req_o              
+    0:01:12   60893.0      0.76    1033.0       0.0 instr_req_o              
+    0:01:12   60894.1      0.75    1033.0       0.0 instr_req_o              
+    0:01:12   60894.1      0.75    1033.0       0.0 instr_req_o              
+    0:01:13   60895.1      0.75    1033.0       0.0 instr_req_o              
+    0:01:13   60895.1      0.75    1033.0       0.0 instr_req_o              
+    0:01:13   60895.1      0.75    1033.0       0.0 instr_req_o              
+    0:01:13   60895.1      0.75    1032.9       0.0 instr_req_o              
+    0:01:13   60895.1      0.75    1032.9       0.0 instr_req_o              
+    0:01:13   60895.1      0.75    1032.9       0.0 instr_req_o              
+
+1
+streaming_dft_planner
+0
+change_names -rules verilog -hierarchy
+Warning: In the design riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800, net 'instr_addr_o[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_pmp_N_PMP_ENTRIES16_test_1, net 'data_addr_i[28]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_pmp_N_PMP_ENTRIES16_test_1, net 'data_addr_i[27]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_pmp_N_PMP_ENTRIES16_test_1, net 'data_addr_i[24]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_pmp_N_PMP_ENTRIES16_test_1, net 'data_addr_i[22]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_pmp_N_PMP_ENTRIES16_test_1, net 'data_addr_i[21]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_pmp_N_PMP_ENTRIES16_test_1, net 'data_addr_i[19]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_pmp_N_PMP_ENTRIES16_test_1, net 'data_addr_i[8]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_pmp_N_PMP_ENTRIES16_test_1, net 'data_addr_i[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_pmp_N_PMP_ENTRIES16_test_1, net 'data_addr_i[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_id_stage_N_HWLP2_PULP_SECURE1_APU0_FPU0_Zfinx0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_MULT0_SHARED_INT_DIV0_SHARED_FP_DIVSQRT0_WAPUTYPE0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'exc_pc_mux_o[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[31]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[30]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[29]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[28]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[27]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[26]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[25]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[24]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[23]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[22]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[21]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[20]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[19]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[18]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[17]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[16]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[15]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[14]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[13]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[12]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[11]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[10]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[9]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[8]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[7]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[6]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[5]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'alu_operand_c_i[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[31]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[30]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[29]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[28]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[27]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[26]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[25]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[24]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[23]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[22]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[21]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[20]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[19]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[18]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[17]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[16]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[15]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[14]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[13]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[12]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[11]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[10]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[9]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[8]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[7]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[6]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[5]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'lsu_rdata_i[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'regfile_alu_waddr_i[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'regfile_alu_waddr_i[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'regfile_alu_waddr_i[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'regfile_alu_waddr_i[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'regfile_alu_waddr_i[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5_test_1, net 'regfile_alu_we_i' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_controller_FPU0_test_1, net 'irq_id_ctrl_i[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_controller_FPU0_test_1, net 'irq_id_ctrl_i[3]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_controller_FPU0_test_1, net 'irq_id_ctrl_i[2]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_controller_FPU0_test_1, net 'irq_id_ctrl_i[1]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_controller_FPU0_test_1, net 'irq_id_ctrl_i[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_controller_FPU0_test_1, net 'exc_cause_o[4]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_controller_FPU0_test_1, net 'data_misaligned_i' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_controller_FPU0_test_1, net 'jr_stall_o' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_controller_FPU0_test_1, net 'csr_cause_o_5__BAR' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_controller_FPU0_test_1, net 'csr_save_ex_o_BAR' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_load_store_unit_test_1, net 'data_we_ex_i' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_cs_registers_N_EXT_CNT0_APU0_FPU0_PULP_SECURE1_USE_PMP1_N_PMP_ENTRIES16_test_1, net 'priv_lvl_o[0]' is connecting multiple ports. (UCN-1)
+Warning: In the design riscv_L0_buffer_RDATA_IN_WIDTH128_test_1, net 'instr_gnt_i' is connecting multiple ports. (UCN-1)
+1
+#report_scan_path -test_mode all
+report_area
+ 
+****************************************
+Report : area
+Design : riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800
+Version: R-2020.09-SP2
+Date   : Thu Jan 13 15:49:15 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/s287758/tft-hw-assignment/syn/techlib/NangateOpenCellLibrary_typical_ccs_scan.db)
+
+Number of ports:                         8930
+Number of nets:                         51427
+Number of cells:                        39701
+Number of combinational cells:          36411
+Number of sequential cells:              3135
+Number of macros/black boxes:               0
+Number of buf/inv:                       6075
+Number of references:                      18
+
+Combinational area:              40202.442097
+Buf/Inv area:                     3526.894016
+Noncombinational area:           20692.672204
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 60895.114301
+Total area:                 undefined
+1
+report_area > ../reports/report_area.txt
+report_clock_gating
+ 
+****************************************
+Report : clock_gating
+Design : riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800
+Version: R-2020.09-SP2
+Date   : Thu Jan 13 15:49:20 2022
+****************************************
+
+Information: Identification of clock-gating cells has not been performed. Pre-existing clock-gating cells will not be reported. (PWR-947)
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |       97         |
+          |                                       |                  |
+          |    Number of Gated registers          |  2981 (98.16%)   |
+          |                                       |                  |
+          |    Number of Ungated registers        |    56 (1.84%)    |
+          |                                       |                  |
+          |    Total number of registers          |     3037         |
+          ------------------------------------------------------------
+
+
+
+                             Clock Gating Report by Origin
+          +-------------------------------------------------+------------------+
+          |                                                 |    Actual (%)    |
+          |                                                 |    Count         |
+          +-------------------------------------------------+------------------+
+          |  Number of tool-inserted clock gating elements  |    97 (100.00%)  |
+          |                                                 |                  |
+          |  Number of pre-existing clock gating elements   |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of gated registers                      |  2981 (98.16%)   |
+          |                                                 |                  |
+          |  Number of tool-inserted gated registers        |  2981 (98.16%)   |
+          |                                                 |                  |
+          |  Number of pre-existing gated registers         |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of ungated registers                    |    56 (1.84%)    |
+          |                                                 |                  |
+          |  Number of registers                            |     3037         |
+          +-------------------------------------------------+------------------+
+
+
+
+1
+report_clock_gating > ../reports/report_clock_gating.txt
+report_power 
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800
+Version: R-2020.09-SP2
+Date   : Thu Jan 13 15:49:28 2022
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/s287758/tft-hw-assignment/syn/techlib/NangateOpenCellLibrary_typical_ccs_scan.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800
+                       5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  14.5489 mW   (58%)
+  Net Switching Power  =  10.5103 mW   (42%)
+                         ---------
+Total Dynamic Power    =  25.0592 mW  (100%)
+
+Cell Leakage Power     =   1.2621 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network    516.6086        2.1275e+03        5.7913e+03        2.6499e+03  (  10.07%)
+register       9.5980e+03        1.7316e+03        3.2537e+05        1.1655e+04  (  44.28%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  4.4343e+03        6.6512e+03        9.3093e+05        1.2016e+04  (  45.65%)
+--------------------------------------------------------------------------------------------------
+Total          1.4549e+04 uW     1.0510e+04 uW     1.2621e+06 nW     2.6321e+04 uW
+1
+report_power > ../reports/report_power.txt
+#report delle scan chain raggruppate in tabella
+report_scan_path -view existing_dft -chain all -test_mode all
+ 
+****************************************
+Report : Scan path
+Design : riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800
+Version: R-2020.09-SP2
+Date   : Thu Jan 13 15:49:30 2022
+****************************************
+
+========================================
+TEST MODE: all_dft_user
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: all_dft_protocol
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: all_dft
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Internal_scan_user
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Internal_scan_protocol
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+Scan_path    Len   ScanDataIn  ScanDataOut ScanEnable  MasterClock SlaveClock
+-----------  ----- ----------- ----------- ----------- ----------- -----------
+I 1          152   test_si1    test_so1    test_en_i   clk_i       -
+I 2          152   test_si2    test_so2    test_en_i   clk_i       -
+I 3          152   test_si3    test_so3    test_en_i   clk_i       -
+I 4          152   test_si4    test_so4    test_en_i   clk_i       -
+I 5          152   test_si5    test_so5    test_en_i   clk_i       -
+I 6          152   test_si6    test_so6    test_en_i   clk_i       -
+I 7          152   test_si7    test_so7    test_en_i   clk_i       -
+I 8          152   test_si8    test_so8    test_en_i   clk_i       -
+I 9          152   test_si9    data_we_o   test_en_i   clk_i       -
+I 10         152   test_si10   irq_id_o[4] test_en_i   clk_i       -
+I 11         152   test_si11   test_so11   test_en_i   clk_i       -
+I 12         152   test_si12   test_so12   test_en_i   clk_i       -
+I 13         152   test_si13   test_so13   test_en_i   clk_i       -
+I 14         152   test_si14   test_so14   test_en_i   clk_i       -
+I 15         152   test_si15   test_so15   test_en_i   clk_i       -
+I 16         152   test_si16   test_so16   test_en_i   clk_i       -
+I 17         152   test_si17   test_so17   test_en_i   clk_i       -
+I 18         151   test_si18   test_so18   test_en_i   clk_i       -
+I 19         151   test_si19   test_so19   test_en_i   clk_i       -
+I 20         151   test_si20   test_so20   test_en_i   clk_i       -
+
+========================================
+TEST MODE: Mission_mode_user
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Mission_mode_protocol
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Mission_mode
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+1
+report_scan_path -view existing_dft -chain all -test_mode all > ../reports/simulation_result20.txt
+write -hierarchy -format verilog -output "${GATE_PATH}/${TOPLEVEL}_scan.v"
+Writing verilog file '/home/s287758/tft-hw-assignment/syn/output/riscv_core_scan.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write_sdf -version 3.0 "${GATE_PATH}/${TOPLEVEL}_scan.sdf"
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/s287758/tft-hw-assignment/syn/output/riscv_core_scan.sdf'. (WT-3)
+1
+write_sdc "${GATE_PATH}/${TOPLEVEL}_scan.sdc"
+1
+write_test_protocol -output "${GATE_PATH}/${TOPLEVEL}_scan.spf" -test_mode Internal_scan
+Writing test protocol file '/home/s287758/tft-hw-assignment/syn/output/riscv_core_scan.spf' for mode 'Internal_scan'...
+1
+write_test_protocol -output "${GATE_PATH}/${TOPLEVEL}_scancompress.spf" -test_mode ScanCompression_mode
+Writing test protocol file '/home/s287758/tft-hw-assignment/syn/output/riscv_core_scancompress.spf' for mode 'ScanCompression_mode'...
+Design "riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800" has no test mode named ScanCompression_mode.
+1
+#quit
+dc_shell> quit
+
+Memory usage for this session 304 Mbytes.
+Memory usage for this session including child processes 304 Mbytes.
+CPU usage for this session 1439 seconds ( 0.40 hours ).
+Elapsed time for this session 1769 seconds ( 0.49 hours ).
+
+Thank you...

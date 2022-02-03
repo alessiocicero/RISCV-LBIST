@@ -1,0 +1,503 @@
+ 
+****************************************
+Report : Scan path
+Design : riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800
+Version: O-2018.06-SP4
+Date   : Thu Dec 30 19:51:11 2021
+****************************************
+
+========================================
+TEST MODE: all_dft_user
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: all_dft_protocol
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: all_dft
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: ScanCompression_mode_user
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: ScanCompression_mode_protocol
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: ScanCompression_mode
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+Scan_path    Len   ScanDataIn  ScanDataOut ScanEnable  MasterClock SlaveClock
+-----------  ----- ----------- ----------- ----------- ----------- -----------
+I 1          13    RISCY_PMP_pmp_unit_i/data_err_state_q_reg/SI cs_registers_i/PCCR_q_reg_0__9_/Q test_en_i clk_i -
+I 2          13    cs_registers_i/PCCR_q_reg_0__10_/SI cs_registers_i/PCCR_q_reg_0__22_/Q test_en_i clk_i -
+I 3          13    cs_registers_i/PCCR_q_reg_0__23_/SI cs_registers_i/PCER_q_reg_3_/Q test_en_i clk_i -
+I 4          13    cs_registers_i/PCER_q_reg_4_/SI cs_registers_i/dcsr_q_reg_cause__8_/Q test_en_i clk_i -
+I 5          13    cs_registers_i/dcsr_q_reg_ebreakm_/SI cs_registers_i/dcsr_q_reg_zero2__18_/Q test_en_i clk_i -
+I 6          13    cs_registers_i/dcsr_q_reg_zero2__19_/SI cs_registers_i/depc_q_reg_3_/Q test_en_i clk_i -
+I 7          13    cs_registers_i/depc_q_reg_4_/SI cs_registers_i/depc_q_reg_16_/Q test_en_i clk_i -
+I 8          13    cs_registers_i/depc_q_reg_17_/SI cs_registers_i/depc_q_reg_29_/Q test_en_i clk_i -
+I 9          13    cs_registers_i/depc_q_reg_30_/SI cs_registers_i/dscratch0_q_reg_10_/Q test_en_i clk_i -
+I 10         13    cs_registers_i/dscratch0_q_reg_11_/SI cs_registers_i/dscratch0_q_reg_23_/Q test_en_i clk_i -
+I 11         13    cs_registers_i/dscratch0_q_reg_24_/SI cs_registers_i/dscratch1_q_reg_4_/Q test_en_i clk_i -
+I 12         13    cs_registers_i/dscratch1_q_reg_5_/SI cs_registers_i/dscratch1_q_reg_17_/Q test_en_i clk_i -
+I 13         13    cs_registers_i/dscratch1_q_reg_18_/SI cs_registers_i/dscratch1_q_reg_30_/Q test_en_i clk_i -
+I 14         13    cs_registers_i/dscratch1_q_reg_31_/SI cs_registers_i/mepc_q_reg_4_/Q test_en_i clk_i -
+I 15         13    cs_registers_i/mepc_q_reg_5_/SI cs_registers_i/mepc_q_reg_17_/Q test_en_i clk_i -
+I 16         13    cs_registers_i/mepc_q_reg_18_/SI cs_registers_i/mepc_q_reg_30_/Q test_en_i clk_i -
+I 17         13    cs_registers_i/mepc_q_reg_31_/SI cs_registers_i/mscratch_q_reg_11_/Q test_en_i clk_i -
+I 18         13    cs_registers_i/mscratch_q_reg_12_/SI cs_registers_i/mscratch_q_reg_24_/Q test_en_i clk_i -
+I 19         13    cs_registers_i/mscratch_q_reg_25_/SI cs_registers_i/mstatus_q_reg_uie_/Q test_en_i clk_i -
+I 20         13    cs_registers_i/mstatus_q_reg_upie_/SI cs_registers_i/mtvec_q_reg_11_/Q test_en_i clk_i -
+I 21         13    cs_registers_i/mtvec_q_reg_12_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__0__0_/Q test_en_i clk_i -
+I 22         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__0__1_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__0__13_/Q test_en_i clk_i -
+I 23         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__0__14_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__0__26_/Q test_en_i clk_i -
+I 24         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__0__27_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__1__7_/Q test_en_i clk_i -
+I 25         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__1__8_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__1__20_/Q test_en_i clk_i -
+I 26         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__1__21_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__2__1_/Q test_en_i clk_i -
+I 27         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__2__2_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__2__14_/Q test_en_i clk_i -
+I 28         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__2__15_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__2__27_/Q test_en_i clk_i -
+I 29         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__2__28_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__3__8_/Q test_en_i clk_i -
+I 30         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__3__9_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__3__21_/Q test_en_i clk_i -
+I 31         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__3__22_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__4__2_/Q test_en_i clk_i -
+I 32         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__4__3_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__4__15_/Q test_en_i clk_i -
+I 33         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__4__16_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__4__28_/Q test_en_i clk_i -
+I 34         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__4__29_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__5__9_/Q test_en_i clk_i -
+I 35         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__5__10_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__5__22_/Q test_en_i clk_i -
+I 36         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__5__23_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__6__3_/Q test_en_i clk_i -
+I 37         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__6__4_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__6__16_/Q test_en_i clk_i -
+I 38         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__6__17_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__6__29_/Q test_en_i clk_i -
+I 39         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__6__30_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__7__10_/Q test_en_i clk_i -
+I 40         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__7__11_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__7__23_/Q test_en_i clk_i -
+I 41         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__7__24_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__8__4_/Q test_en_i clk_i -
+I 42         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__8__5_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__8__17_/Q test_en_i clk_i -
+I 43         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__8__18_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__8__30_/Q test_en_i clk_i -
+I 44         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__8__31_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__9__11_/Q test_en_i clk_i -
+I 45         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__9__12_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__9__24_/Q test_en_i clk_i -
+I 46         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__9__25_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__10__5_/Q test_en_i clk_i -
+I 47         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__10__6_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__10__18_/Q test_en_i clk_i -
+I 48         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__10__19_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__10__31_/Q test_en_i clk_i -
+I 49         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__11__0_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__11__12_/Q test_en_i clk_i -
+I 50         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__11__13_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__11__25_/Q test_en_i clk_i -
+I 51         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__11__26_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__12__6_/Q test_en_i clk_i -
+I 52         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__12__7_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__12__19_/Q test_en_i clk_i -
+I 53         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__12__20_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__13__0_/Q test_en_i clk_i -
+I 54         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__13__1_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__13__13_/Q test_en_i clk_i -
+I 55         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__13__14_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__13__26_/Q test_en_i clk_i -
+I 56         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__13__27_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__14__7_/Q test_en_i clk_i -
+I 57         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__14__8_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__14__20_/Q test_en_i clk_i -
+I 58         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__14__21_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__15__1_/Q test_en_i clk_i -
+I 59         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__15__2_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__15__14_/Q test_en_i clk_i -
+I 60         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__15__15_/SI cs_registers_i/pmp_reg_q_reg_pmpaddr__15__27_/Q test_en_i clk_i -
+I 61         13    cs_registers_i/pmp_reg_q_reg_pmpaddr__15__28_/SI cs_registers_i/pmp_reg_q_reg_pmpcfg__1__0_/Q test_en_i clk_i -
+I 62         13    cs_registers_i/pmp_reg_q_reg_pmpcfg__1__1_/SI cs_registers_i/pmp_reg_q_reg_pmpcfg__2__5_/Q test_en_i clk_i -
+I 63         13    cs_registers_i/pmp_reg_q_reg_pmpcfg__2__6_/SI cs_registers_i/pmp_reg_q_reg_pmpcfg__4__2_/Q test_en_i clk_i -
+I 64         13    cs_registers_i/pmp_reg_q_reg_pmpcfg__4__3_/SI cs_registers_i/pmp_reg_q_reg_pmpcfg__5__7_/Q test_en_i clk_i -
+I 65         13    cs_registers_i/pmp_reg_q_reg_pmpcfg__6__0_/SI cs_registers_i/pmp_reg_q_reg_pmpcfg__7__4_/Q test_en_i clk_i -
+I 66         13    cs_registers_i/pmp_reg_q_reg_pmpcfg__7__5_/SI cs_registers_i/pmp_reg_q_reg_pmpcfg__9__1_/Q test_en_i clk_i -
+I 67         13    cs_registers_i/pmp_reg_q_reg_pmpcfg__9__2_/SI cs_registers_i/pmp_reg_q_reg_pmpcfg__10__6_/Q test_en_i clk_i -
+I 68         13    cs_registers_i/pmp_reg_q_reg_pmpcfg__10__7_/SI cs_registers_i/pmp_reg_q_reg_pmpcfg__12__3_/Q test_en_i clk_i -
+I 69         13    cs_registers_i/pmp_reg_q_reg_pmpcfg__12__4_/SI cs_registers_i/pmp_reg_q_reg_pmpcfg__14__0_/Q test_en_i clk_i -
+I 70         13    cs_registers_i/pmp_reg_q_reg_pmpcfg__14__1_/SI cs_registers_i/pmp_reg_q_reg_pmpcfg__15__5_/Q test_en_i clk_i -
+I 71         13    cs_registers_i/pmp_reg_q_reg_pmpcfg__15__6_/SI cs_registers_i/uepc_q_reg_2_/Q test_en_i clk_i -
+I 72         13    cs_registers_i/uepc_q_reg_3_/SI cs_registers_i/uepc_q_reg_15_/Q test_en_i clk_i -
+I 73         13    cs_registers_i/uepc_q_reg_16_/SI cs_registers_i/uepc_q_reg_28_/Q test_en_i clk_i -
+I 74         13    cs_registers_i/uepc_q_reg_29_/SI cs_registers_i/utvec_q_reg_9_/Q test_en_i clk_i -
+I 75         13    cs_registers_i/utvec_q_reg_10_/SI cs_registers_i/utvec_q_reg_22_/Q test_en_i clk_i -
+I 76         13    cs_registers_i/utvec_q_reg_23_/SI ex_stage_i/alu_i/int_div_div_i/AReg_DP_reg_11_/Q test_en_i clk_i -
+I 77         13    ex_stage_i/alu_i/int_div_div_i/AReg_DP_reg_12_/SI ex_stage_i/alu_i/int_div_div_i/AReg_DP_reg_24_/Q test_en_i clk_i -
+I 78         13    ex_stage_i/alu_i/int_div_div_i/AReg_DP_reg_25_/SI ex_stage_i/alu_i/int_div_div_i/BReg_DP_reg_5_/Q test_en_i clk_i -
+I 79         13    ex_stage_i/alu_i/int_div_div_i/BReg_DP_reg_6_/SI ex_stage_i/alu_i/int_div_div_i/BReg_DP_reg_18_/Q test_en_i clk_i -
+I 80         13    ex_stage_i/alu_i/int_div_div_i/BReg_DP_reg_19_/SI ex_stage_i/alu_i/int_div_div_i/BReg_DP_reg_31_/Q test_en_i clk_i -
+I 81         13    ex_stage_i/alu_i/int_div_div_i/Cnt_DP_reg_0_/SI ex_stage_i/alu_i/int_div_div_i/ResReg_DP_reg_3_/Q test_en_i clk_i -
+I 82         13    ex_stage_i/alu_i/int_div_div_i/ResReg_DP_reg_4_/SI ex_stage_i/alu_i/int_div_div_i/ResReg_DP_reg_16_/Q test_en_i clk_i -
+I 83         13    ex_stage_i/alu_i/int_div_div_i/ResReg_DP_reg_17_/SI ex_stage_i/alu_i/int_div_div_i/ResReg_DP_reg_29_/Q test_en_i clk_i -
+I 84         13    ex_stage_i/alu_i/int_div_div_i/ResReg_DP_reg_30_/SI ex_stage_i/regfile_waddr_lsu_reg_4_/Q test_en_i clk_i -
+I 85         13    ex_stage_i/regfile_we_lsu_reg/SI id_stage_i/alu_operand_a_ex_o_reg_6_/Q test_en_i clk_i -
+I 86         13    id_stage_i/alu_operand_a_ex_o_reg_7_/SI id_stage_i/alu_operand_a_ex_o_reg_19_/Q test_en_i clk_i -
+I 87         13    id_stage_i/alu_operand_a_ex_o_reg_20_/SI id_stage_i/alu_operand_b_ex_o_reg_0_/Q test_en_i clk_i -
+I 88         13    id_stage_i/alu_operand_b_ex_o_reg_1_/SI id_stage_i/alu_operand_b_ex_o_reg_13_/Q test_en_i clk_i -
+I 89         13    id_stage_i/alu_operand_b_ex_o_reg_14_/SI id_stage_i/alu_operand_b_ex_o_reg_26_/Q test_en_i clk_i -
+I 90         13    id_stage_i/alu_operand_b_ex_o_reg_27_/SI id_stage_i/alu_operand_c_ex_o_reg_7_/Q test_en_i clk_i -
+I 91         13    id_stage_i/alu_operand_c_ex_o_reg_8_/SI id_stage_i/alu_operand_c_ex_o_reg_20_/Q test_en_i clk_i -
+I 92         13    id_stage_i/alu_operand_c_ex_o_reg_21_/SI id_stage_i/alu_operator_ex_o_reg_1_/Q test_en_i clk_i -
+I 93         13    id_stage_i/alu_operator_ex_o_reg_2_/SI id_stage_i/bmask_b_ex_o_reg_0_/Q test_en_i clk_i -
+I 94         13    id_stage_i/bmask_b_ex_o_reg_1_/SI id_stage_i/controller_i/illegal_insn_q_reg/Q test_en_i clk_i -
+I 95         13    id_stage_i/controller_i/instr_valid_irq_flush_q_reg/SI id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__0_/Q test_en_i clk_i -
+I 96         13    id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__1_/SI id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__13_/Q test_en_i clk_i -
+I 97         13    id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__14_/SI id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__26_/Q test_en_i clk_i -
+I 98         13    id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_0__27_/SI id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_1__7_/Q test_en_i clk_i -
+I 99         13    id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_1__8_/SI id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_1__20_/Q test_en_i clk_i -
+I 100        13    id_stage_i/hwloop_regs_i/hwlp_counter_q_reg_1__21_/SI id_stage_i/hwloop_regs_i/hwlp_end_q_reg_0__1_/Q test_en_i clk_i -
+I 101        13    id_stage_i/hwloop_regs_i/hwlp_end_q_reg_0__2_/SI id_stage_i/hwloop_regs_i/hwlp_end_q_reg_0__14_/Q test_en_i clk_i -
+I 102        13    id_stage_i/hwloop_regs_i/hwlp_end_q_reg_0__15_/SI id_stage_i/hwloop_regs_i/hwlp_end_q_reg_0__27_/Q test_en_i clk_i -
+I 103        13    id_stage_i/hwloop_regs_i/hwlp_end_q_reg_0__28_/SI id_stage_i/hwloop_regs_i/hwlp_end_q_reg_1__8_/Q test_en_i clk_i -
+I 104        13    id_stage_i/hwloop_regs_i/hwlp_end_q_reg_1__9_/SI id_stage_i/hwloop_regs_i/hwlp_end_q_reg_1__21_/Q test_en_i clk_i -
+I 105        13    id_stage_i/hwloop_regs_i/hwlp_end_q_reg_1__22_/SI id_stage_i/hwloop_regs_i/hwlp_start_q_reg_0__2_/Q test_en_i clk_i -
+I 106        13    id_stage_i/hwloop_regs_i/hwlp_start_q_reg_0__3_/SI id_stage_i/hwloop_regs_i/hwlp_start_q_reg_0__15_/Q test_en_i clk_i -
+I 107        13    id_stage_i/hwloop_regs_i/hwlp_start_q_reg_0__16_/SI id_stage_i/hwloop_regs_i/hwlp_start_q_reg_0__28_/Q test_en_i clk_i -
+I 108        13    id_stage_i/hwloop_regs_i/hwlp_start_q_reg_0__29_/SI id_stage_i/hwloop_regs_i/hwlp_start_q_reg_1__9_/Q test_en_i clk_i -
+I 109        13    id_stage_i/hwloop_regs_i/hwlp_start_q_reg_1__10_/SI id_stage_i/hwloop_regs_i/hwlp_start_q_reg_1__22_/Q test_en_i clk_i -
+I 110        13    id_stage_i/hwloop_regs_i/hwlp_start_q_reg_1__23_/SI id_stage_i/int_controller_i/exc_ctrl_cs_reg_1_/Q test_en_i clk_i -
+I 111        13    id_stage_i/int_controller_i/irq_id_q_reg_0_/SI id_stage_i/mult_dot_op_a_ex_o_reg_3_/Q test_en_i clk_i -
+I 112        13    id_stage_i/mult_dot_op_a_ex_o_reg_4_/SI id_stage_i/mult_dot_op_a_ex_o_reg_16_/Q test_en_i clk_i -
+I 113        13    id_stage_i/mult_dot_op_a_ex_o_reg_17_/SI id_stage_i/mult_dot_op_a_ex_o_reg_29_/Q test_en_i clk_i -
+I 114        13    id_stage_i/mult_dot_op_a_ex_o_reg_30_/SI id_stage_i/mult_dot_op_b_ex_o_reg_10_/Q test_en_i clk_i -
+I 115        13    id_stage_i/mult_dot_op_b_ex_o_reg_11_/SI id_stage_i/mult_dot_op_b_ex_o_reg_23_/Q test_en_i clk_i -
+I 116        13    id_stage_i/mult_dot_op_b_ex_o_reg_24_/SI id_stage_i/mult_dot_op_c_ex_o_reg_4_/Q test_en_i clk_i -
+I 117        13    id_stage_i/mult_dot_op_c_ex_o_reg_5_/SI id_stage_i/mult_dot_op_c_ex_o_reg_17_/Q test_en_i clk_i -
+I 118        13    id_stage_i/mult_dot_op_c_ex_o_reg_18_/SI id_stage_i/mult_dot_op_c_ex_o_reg_30_/Q test_en_i clk_i -
+I 119        13    id_stage_i/mult_dot_op_c_ex_o_reg_31_/SI id_stage_i/mult_operand_a_ex_o_reg_2_/Q test_en_i clk_i -
+I 120        13    id_stage_i/mult_operand_a_ex_o_reg_3_/SI id_stage_i/mult_operand_a_ex_o_reg_15_/Q test_en_i clk_i -
+I 121        13    id_stage_i/mult_operand_a_ex_o_reg_16_/SI id_stage_i/mult_operand_a_ex_o_reg_28_/Q test_en_i clk_i -
+I 122        13    id_stage_i/mult_operand_a_ex_o_reg_29_/SI id_stage_i/mult_operand_b_ex_o_reg_9_/Q test_en_i clk_i -
+I 123        13    id_stage_i/mult_operand_b_ex_o_reg_10_/SI id_stage_i/mult_operand_b_ex_o_reg_22_/Q test_en_i clk_i -
+I 124        13    id_stage_i/mult_operand_b_ex_o_reg_23_/SI id_stage_i/mult_operand_c_ex_o_reg_3_/Q test_en_i clk_i -
+I 125        13    id_stage_i/mult_operand_c_ex_o_reg_4_/SI id_stage_i/mult_operand_c_ex_o_reg_16_/Q test_en_i clk_i -
+I 126        13    id_stage_i/mult_operand_c_ex_o_reg_17_/SI id_stage_i/mult_operand_c_ex_o_reg_29_/Q test_en_i clk_i -
+I 127        13    id_stage_i/mult_operand_c_ex_o_reg_30_/SI id_stage_i/pc_ex_o_reg_4_/Q test_en_i clk_i -
+I 128        13    id_stage_i/pc_ex_o_reg_5_/SI id_stage_i/pc_ex_o_reg_17_/Q test_en_i clk_i -
+I 129        13    id_stage_i/pc_ex_o_reg_18_/SI id_stage_i/pc_ex_o_reg_30_/Q test_en_i clk_i -
+I 130        13    id_stage_i/pc_ex_o_reg_31_/SI id_stage_i/regfile_waddr_ex_o_reg_4_/Q test_en_i clk_i -
+I 131        13    id_stage_i/regfile_we_ex_o_reg/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_1__11_/Q test_en_i clk_i -
+I 132        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_1__12_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_1__24_/Q test_en_i clk_i -
+I 133        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_1__25_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_2__5_/Q test_en_i clk_i -
+I 134        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_2__6_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_2__18_/Q test_en_i clk_i -
+I 135        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_2__19_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_2__31_/Q test_en_i clk_i -
+I 136        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_3__0_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_3__12_/Q test_en_i clk_i -
+I 137        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_3__13_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_3__25_/Q test_en_i clk_i -
+I 138        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_3__26_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_4__6_/Q test_en_i clk_i -
+I 139        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_4__7_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_4__19_/Q test_en_i clk_i -
+I 140        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_4__20_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_5__0_/Q test_en_i clk_i -
+I 141        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_5__1_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_5__13_/Q test_en_i clk_i -
+I 142        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_5__14_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_5__26_/Q test_en_i clk_i -
+I 143        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_5__27_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_6__7_/Q test_en_i clk_i -
+I 144        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_6__8_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_6__20_/Q test_en_i clk_i -
+I 145        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_6__21_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_7__1_/Q test_en_i clk_i -
+I 146        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_7__2_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_7__14_/Q test_en_i clk_i -
+I 147        13    id_stage_i/registers_i/riscv_register_file_i/mem_reg_7__15_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_7__27_/Q test_en_i clk_i -
+I 148        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_7__28_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_8__7_/Q test_en_i clk_i -
+I 149        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_8__8_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_8__19_/Q test_en_i clk_i -
+I 150        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_8__20_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_8__31_/Q test_en_i clk_i -
+I 151        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_9__0_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_9__11_/Q test_en_i clk_i -
+I 152        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_9__12_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_9__23_/Q test_en_i clk_i -
+I 153        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_9__24_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_10__3_/Q test_en_i clk_i -
+I 154        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_10__4_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_10__15_/Q test_en_i clk_i -
+I 155        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_10__16_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_10__27_/Q test_en_i clk_i -
+I 156        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_10__28_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_11__7_/Q test_en_i clk_i -
+I 157        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_11__8_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_11__19_/Q test_en_i clk_i -
+I 158        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_11__20_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_11__31_/Q test_en_i clk_i -
+I 159        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_12__0_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_12__11_/Q test_en_i clk_i -
+I 160        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_12__12_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_12__23_/Q test_en_i clk_i -
+I 161        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_12__24_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_13__3_/Q test_en_i clk_i -
+I 162        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_13__4_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_13__15_/Q test_en_i clk_i -
+I 163        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_13__16_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_13__27_/Q test_en_i clk_i -
+I 164        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_13__28_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_14__7_/Q test_en_i clk_i -
+I 165        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_14__8_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_14__19_/Q test_en_i clk_i -
+I 166        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_14__20_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_14__31_/Q test_en_i clk_i -
+I 167        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_15__0_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_15__11_/Q test_en_i clk_i -
+I 168        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_15__12_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_15__23_/Q test_en_i clk_i -
+I 169        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_15__24_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_16__3_/Q test_en_i clk_i -
+I 170        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_16__4_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_16__15_/Q test_en_i clk_i -
+I 171        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_16__16_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_16__27_/Q test_en_i clk_i -
+I 172        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_16__28_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_17__7_/Q test_en_i clk_i -
+I 173        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_17__8_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_17__19_/Q test_en_i clk_i -
+I 174        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_17__20_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_17__31_/Q test_en_i clk_i -
+I 175        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_18__0_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_18__11_/Q test_en_i clk_i -
+I 176        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_18__12_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_18__23_/Q test_en_i clk_i -
+I 177        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_18__24_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_19__3_/Q test_en_i clk_i -
+I 178        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_19__4_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_19__15_/Q test_en_i clk_i -
+I 179        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_19__16_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_19__27_/Q test_en_i clk_i -
+I 180        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_19__28_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_20__7_/Q test_en_i clk_i -
+I 181        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_20__8_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_20__19_/Q test_en_i clk_i -
+I 182        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_20__20_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_20__31_/Q test_en_i clk_i -
+I 183        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_21__0_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_21__11_/Q test_en_i clk_i -
+I 184        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_21__12_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_21__23_/Q test_en_i clk_i -
+I 185        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_21__24_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_22__3_/Q test_en_i clk_i -
+I 186        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_22__4_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_22__15_/Q test_en_i clk_i -
+I 187        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_22__16_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_22__27_/Q test_en_i clk_i -
+I 188        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_22__28_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_23__7_/Q test_en_i clk_i -
+I 189        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_23__8_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_23__19_/Q test_en_i clk_i -
+I 190        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_23__20_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_23__31_/Q test_en_i clk_i -
+I 191        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_24__0_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_24__11_/Q test_en_i clk_i -
+I 192        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_24__12_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_24__23_/Q test_en_i clk_i -
+I 193        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_24__24_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_25__3_/Q test_en_i clk_i -
+I 194        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_25__4_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_25__15_/Q test_en_i clk_i -
+I 195        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_25__16_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_25__27_/Q test_en_i clk_i -
+I 196        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_25__28_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_26__7_/Q test_en_i clk_i -
+I 197        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_26__8_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_26__19_/Q test_en_i clk_i -
+I 198        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_26__20_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_26__31_/Q test_en_i clk_i -
+I 199        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_27__0_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_27__11_/Q test_en_i clk_i -
+I 200        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_27__12_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_27__23_/Q test_en_i clk_i -
+I 201        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_27__24_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_28__3_/Q test_en_i clk_i -
+I 202        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_28__4_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_28__15_/Q test_en_i clk_i -
+I 203        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_28__16_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_28__27_/Q test_en_i clk_i -
+I 204        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_28__28_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_29__7_/Q test_en_i clk_i -
+I 205        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_29__8_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_29__19_/Q test_en_i clk_i -
+I 206        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_29__20_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_29__31_/Q test_en_i clk_i -
+I 207        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_30__0_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_30__11_/Q test_en_i clk_i -
+I 208        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_30__12_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_30__23_/Q test_en_i clk_i -
+I 209        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_30__24_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_31__3_/Q test_en_i clk_i -
+I 210        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_31__4_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_31__15_/Q test_en_i clk_i -
+I 211        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_31__16_/SI id_stage_i/registers_i/riscv_register_file_i/mem_reg_31__27_/Q test_en_i clk_i -
+I 212        12    id_stage_i/registers_i/riscv_register_file_i/mem_reg_31__28_/SI if_stage_i/instr_rdata_id_o_reg_2_/Q test_en_i clk_i -
+I 213        12    if_stage_i/instr_rdata_id_o_reg_3_/SI if_stage_i/instr_rdata_id_o_reg_14_/Q test_en_i clk_i -
+I 214        12    if_stage_i/instr_rdata_id_o_reg_15_/SI if_stage_i/instr_rdata_id_o_reg_26_/Q test_en_i clk_i -
+I 215        12    if_stage_i/instr_rdata_id_o_reg_27_/SI if_stage_i/pc_id_o_reg_2_/Q test_en_i clk_i -
+I 216        12    if_stage_i/pc_id_o_reg_3_/SI if_stage_i/pc_id_o_reg_14_/Q test_en_i clk_i -
+I 217        12    if_stage_i/pc_id_o_reg_15_/SI if_stage_i/pc_id_o_reg_26_/Q test_en_i clk_i -
+I 218        12    if_stage_i/pc_id_o_reg_27_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/CS_reg_2_/Q test_en_i clk_i -
+I 219        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_0__0_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_0__11_/Q test_en_i clk_i -
+I 220        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_0__12_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_0__23_/Q test_en_i clk_i -
+I 221        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_0__24_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_1__3_/Q test_en_i clk_i -
+I 222        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_1__4_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_1__15_/Q test_en_i clk_i -
+I 223        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_1__16_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_1__27_/Q test_en_i clk_i -
+I 224        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_1__28_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_2__7_/Q test_en_i clk_i -
+I 225        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_2__8_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_2__19_/Q test_en_i clk_i -
+I 226        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_2__20_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_2__31_/Q test_en_i clk_i -
+I 227        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_3__0_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_3__11_/Q test_en_i clk_i -
+I 228        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_3__12_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_3__23_/Q test_en_i clk_i -
+I 229        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/L0_buffer_reg_3__24_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/addr_q_reg_4_/Q test_en_i clk_i -
+I 230        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/addr_q_reg_5_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/addr_q_reg_16_/Q test_en_i clk_i -
+I 231        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/addr_q_reg_17_/SI if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/addr_q_reg_28_/Q test_en_i clk_i -
+I 232        12    if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/addr_q_reg_29_/SI if_stage_i/prefetch_128_prefetch_buffer_i/addr_q_reg_8_/Q test_en_i clk_i -
+I 233        12    if_stage_i/prefetch_128_prefetch_buffer_i/addr_q_reg_9_/SI if_stage_i/prefetch_128_prefetch_buffer_i/addr_q_reg_20_/Q test_en_i clk_i -
+I 234        12    if_stage_i/prefetch_128_prefetch_buffer_i/addr_q_reg_21_/SI if_stage_i/prefetch_128_prefetch_buffer_i/is_hwlp_q_reg/Q test_en_i clk_i -
+I 235        12    if_stage_i/prefetch_128_prefetch_buffer_i/rdata_last_q_reg_0_/SI if_stage_i/prefetch_128_prefetch_buffer_i/rdata_last_q_reg_11_/Q test_en_i clk_i -
+I 236        12    if_stage_i/prefetch_128_prefetch_buffer_i/rdata_last_q_reg_12_/SI if_stage_i/prefetch_128_prefetch_buffer_i/rdata_last_q_reg_23_/Q test_en_i clk_i -
+I 237        12    if_stage_i/prefetch_128_prefetch_buffer_i/rdata_last_q_reg_24_/SI load_store_unit_i/data_type_q_reg_0_/Q test_en_i clk_i -
+I 238        12    load_store_unit_i/data_type_q_reg_1_/SI load_store_unit_i/rdata_q_reg_7_/Q test_en_i clk_i -
+I 239        12    load_store_unit_i/rdata_q_reg_8_/SI load_store_unit_i/rdata_q_reg_19_/Q test_en_i clk_i -
+I 240        12    load_store_unit_i/rdata_q_reg_20_/SI load_store_unit_i/rdata_q_reg_31_/Q test_en_i clk_i -
+I sccompin0  -     test_si1    -           -           -           -
+I sccompin1  -     test_si2    -           -           -           -
+I sccompin2  -     test_si3    -           -           -           -
+I sccompin3  -     test_si4    -           -           -           -
+I sccompin4  -     test_si5    -           -           -           -
+I sccompin5  -     test_si6    -           -           -           -
+I sccompin6  -     test_si7    -           -           -           -
+I sccompin7  -     test_si8    -           -           -           -
+I sccompin8  -     test_si9    -           -           -           -
+I sccompin9  -     test_si10   -           -           -           -
+I sccompin10 -     test_si11   -           -           -           -
+I sccompin11 -     test_si12   -           -           -           -
+I sccompin12 -     test_si13   -           -           -           -
+I sccompin13 -     test_si14   -           -           -           -
+I sccompin14 -     test_si15   -           -           -           -
+I sccompin15 -     test_si16   -           -           -           -
+I sccompin16 -     test_si17   -           -           -           -
+I sccompin17 -     test_si18   -           -           -           -
+I sccompin18 -     test_si19   -           -           -           -
+I sccompin19 -     test_si20   -           -           -           -
+I sccompout0 -     -           test_so1    -           -           -
+I sccompout1 -     -           test_so2    -           -           -
+I sccompout2 -     -           test_so3    -           -           -
+I sccompout3 -     -           test_so4    -           -           -
+I sccompout4 -     -           test_so5    -           -           -
+I sccompout5 -     -           test_so6    -           -           -
+I sccompout6 -     -           test_so7    -           -           -
+I sccompout7 -     -           test_so8    -           -           -
+I sccompout8 -     -           test_so9    -           -           -
+I sccompout9 -     -           test_so10   -           -           -
+I sccompout10 -    -           test_so11   -           -           -
+I sccompout11 -    -           test_so12   -           -           -
+I sccompout12 -    -           test_so13   -           -           -
+I sccompout13 -    -           test_so14   -           -           -
+I sccompout14 -    -           test_so15   -           -           -
+I sccompout15 -    -           test_so16   -           -           -
+I sccompout16 -    -           test_so17   -           -           -
+I sccompout17 -    -           test_so18   -           -           -
+I sccompout18 -    -           test_so19   -           -           -
+I sccompout19 -    -           test_so20   -           -           -
+
+========================================
+TEST MODE: Internal_scan_user
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Internal_scan_protocol
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+Scan_path    Len   ScanDataIn  ScanDataOut ScanEnable  MasterClock SlaveClock
+-----------  ----- ----------- ----------- ----------- ----------- -----------
+I 1          152   test_si1    test_so1    test_en_i   clk_i       -
+I 2          152   test_si2    test_so2    test_en_i   clk_i       -
+I 3          152   test_si3    test_so3    test_en_i   clk_i       -
+I 4          152   test_si4    test_so4    test_en_i   clk_i       -
+I 5          152   test_si5    test_so5    test_en_i   clk_i       -
+I 6          152   test_si6    test_so6    test_en_i   clk_i       -
+I 7          152   test_si7    test_so7    test_en_i   clk_i       -
+I 8          151   test_si8    test_so8    test_en_i   clk_i       -
+I 9          151   test_si9    test_so9    test_en_i   clk_i       -
+I 10         151   test_si10   test_so10   test_en_i   clk_i       -
+I 11         151   test_si11   test_so11   test_en_i   clk_i       -
+I 12         151   test_si12   test_so12   test_en_i   clk_i       -
+I 13         151   test_si13   test_so13   test_en_i   clk_i       -
+I 14         151   test_si14   test_so14   test_en_i   clk_i       -
+I 15         151   test_si15   test_so15   test_en_i   clk_i       -
+I 16         151   test_si16   test_so16   test_en_i   clk_i       -
+I 17         151   test_si17   test_so17   test_en_i   clk_i       -
+I 18         151   test_si18   test_so18   test_en_i   clk_i       -
+I 19         151   test_si19   test_so19   test_en_i   clk_i       -
+I 20         151   test_si20   test_so20   test_en_i   clk_i       -
+
+========================================
+TEST MODE: Mission_mode_user
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Mission_mode_protocol
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Mission_mode
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+1

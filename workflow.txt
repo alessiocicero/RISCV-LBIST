@@ -1,0 +1,5 @@
+1) syn/run_scan_insertion.sh --insert scan chains and test points
+2) sim/compile_testbench.sh --compiles the design and simulates it
+3) sim/fix_evcd.sh --corrects the vcd produced by modelsim
+4) sim/fsim_bist.tcl --commands for TetraMax
+5) syn_system/run_syn.sh --run the synthesis of the lbist

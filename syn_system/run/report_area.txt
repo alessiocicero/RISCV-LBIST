@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : bist
+Version: R-2020.09-SP2
+Date   : Fri Jan 14 18:23:40 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/s287758/tft-hw-assignment/syn_system/techlib/NangateOpenCellLibrary_typical_ccs_scan.db)
+
+Number of ports:                          223
+Number of nets:                           586
+Number of cells:                          359
+Number of combinational cells:            272
+Number of sequential cells:                63
+Number of macros/black boxes:               0
+Number of buf/inv:                         20
+Number of references:                       3
+
+Combinational area:                298.984000
+Buf/Inv area:                       11.172000
+Noncombinational area:             284.885990
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   583.869990
+Total area:                 undefined
+1

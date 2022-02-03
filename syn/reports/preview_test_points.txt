@@ -1,0 +1,281 @@
+Warning: Design 'riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Starting test design rule checking. (TEST-222)
+Warning: Violations occurred during test design rule checking. (TEST-124)
+Information: Test design rule checking completed. (TEST-123)
+Warning: No valid test points found in test point file for target 'x_blocking'.
+  Architecting Scan Chains
+
+****************************************
+Preview_dft report
+For    : 'Insert_dft' command
+Design : riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800
+Version: R-2020.09-SP2
+Date   : Thu Jan 13 15:47:59 2022
+****************************************
+
+Number of chains: 20
+Scan methodology: full_scan
+Scan style: multiplexed_flip_flop
+Clock domain: no_mix
+Scan enable: test_en_i (no hookup pin)
+
+
+Scan chain '1' (test_si1 --> test_so1) contains 152 cells
+
+
+Scan chain '2' (test_si2 --> test_so2) contains 152 cells
+
+
+Scan chain '3' (test_si3 --> test_so3) contains 152 cells
+
+
+Scan chain '4' (test_si4 --> test_so4) contains 152 cells
+
+
+Scan chain '5' (test_si5 --> test_so5) contains 152 cells
+
+
+Scan chain '6' (test_si6 --> test_so6) contains 152 cells
+
+
+Scan chain '7' (test_si7 --> test_so7) contains 152 cells
+
+
+Scan chain '8' (test_si8 --> test_so8) contains 152 cells
+
+
+Scan chain '9' (test_si9 --> data_we_o) contains 152 cells
+
+
+Scan chain '10' (test_si10 --> irq_id_o[4]) contains 152 cells
+
+
+Scan chain '11' (test_si11 --> test_so11) contains 152 cells
+
+
+Scan chain '12' (test_si12 --> test_so12) contains 152 cells
+
+
+Scan chain '13' (test_si13 --> test_so13) contains 152 cells
+
+
+Scan chain '14' (test_si14 --> test_so14) contains 152 cells
+
+
+Scan chain '15' (test_si15 --> test_so15) contains 152 cells
+
+
+Scan chain '16' (test_si16 --> test_so16) contains 152 cells
+
+
+Scan chain '17' (test_si17 --> test_so17) contains 152 cells
+
+
+Scan chain '18' (test_si18 --> test_so18) contains 151 cells
+
+
+Scan chain '19' (test_si19 --> test_so19) contains 151 cells
+
+
+Scan chain '20' (test_si20 --> test_so20) contains 151 cells
+
+
+
+********************** Test Point Plan Report *********************
+
+ Test point register attributes:
+    d - dedicated (DFT-inserted) test point register
+    f - reused (functional) test point register
+  tpe - test point enable signal
+  src - test point source signal
+  snk - test point sink signal
+
+
+ Test point pin attributes:
+    r - random-resistant test point pin
+    x - X-blocking test point pin
+    m - multicycle path test point pin
+    w - core wrapper test point pin
+    s - shadow wrapper test point pin
+    g - self-gating test point pin
+    l - untestable logic test point pin
+    a - AutoFix test point pin
+    u - user-defined test point pin
+
+
+Index  Test Point Register   Test Point Type     Pins
+-----  -------------------   ---------------     ----
+ 1     RISCY_PMP_pmp_unit_i/U_dft_tp_sdtc_ip_0/dtc_reg ( d, snk ) ( clk_i )
+                             observe             RISCY_PMP_pmp_unit_i/U1026/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1095/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U111/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U11857/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1189/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1210/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U12152/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1355/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1372/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1468/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1494/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1527/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1663/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1680/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1759/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1775/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U1855/ZN (r)
+ 2     RISCY_PMP_pmp_unit_i/U_dft_tp_sdtc_ip_1/dtc_reg ( d, snk ) ( clk_i )
+                             observe             RISCY_PMP_pmp_unit_i/U1872/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U2119/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U2209/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U233/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U2333/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U234/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U2348/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U2426/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U2442/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U253/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U2751/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U28/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U2804/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U2843/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U2931/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U2993/ZN (r)
+ 3     RISCY_PMP_pmp_unit_i/U_dft_tp_sdtc_ip_2/dtc_reg ( d, snk ) ( clk_i )
+                             observe             RISCY_PMP_pmp_unit_i/U307/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U31/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U311/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U3128/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U3142/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U3169/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U333/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U3394/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U3408/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U3486/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U3577/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U3624/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U363/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U3735/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U38/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U3851/ZN (r)
+ 4     RISCY_PMP_pmp_unit_i/U_dft_tp_sdtc_ip_3/dtc_reg ( d, snk ) ( clk_i )
+                             observe             RISCY_PMP_pmp_unit_i/U3914/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U4/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U4072/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U4159/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U42/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U4300/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U4375/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U4407/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U4434/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U4474/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U4617/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U4981/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U4989/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5076/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5131/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5155/ZN (r)
+ 5     RISCY_PMP_pmp_unit_i/U_dft_tp_sdtc_ip_4/dtc_reg ( d, snk ) ( clk_i )
+                             observe             RISCY_PMP_pmp_unit_i/U5241/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5309/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5385/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5418/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5442/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5482/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5565/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5623/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5716/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5740/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5761/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5842/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5863/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U5878/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U60/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U629/ZN (r)
+ 6     RISCY_PMP_pmp_unit_i/U_dft_tp_sdtc_ip_5/dtc_reg ( d, snk ) ( clk_i )
+                             observe             RISCY_PMP_pmp_unit_i/U6312/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U638/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U660/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U661/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U6625/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U664/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U688/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U7046/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U7047/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U724/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U755/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U782/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U85/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U924/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U9378/ZN (r)
+                             observe             RISCY_PMP_pmp_unit_i/U945/ZN (r)
+ 7     riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800/U_dft_tp_sdtc_ip_6/dtc_reg ( d, tpe ) ( clk_i )
+                             control_0           RISCY_PMP_pmp_unit_i/U2869/ZN (r)
+                             control_0           RISCY_PMP_pmp_unit_i/U4565/ZN (r)
+                             control_0           cs_registers_i/U144/ZN (r)
+                             control_0           cs_registers_i/U174/ZN (r)
+                             control_1           RISCY_PMP_pmp_unit_i/U218/ZN (r)
+                             control_1           RISCY_PMP_pmp_unit_i/U222/ZN (r)
+                             control_1           RISCY_PMP_pmp_unit_i/U225/ZN (r)
+                             control_1           RISCY_PMP_pmp_unit_i/U4167/ZN (r)
+                             control_1           RISCY_PMP_pmp_unit_i/U486/ZN (r)
+                             control_1           RISCY_PMP_pmp_unit_i/U591/ZN (r)
+                             control_1           RISCY_PMP_pmp_unit_i/U6702/ZN (r)
+                             control_1           RISCY_PMP_pmp_unit_i/U6785/ZN (r)
+                             control_1           U48/ZN (r)
+                             control_1           U49/ZN (r)
+ 8     riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800/U_dft_tp_sdtc_ip_7/dtc_reg ( d, tpe ) ( clk_i )
+                             control_0           ex_stage_i/U41/ZN (r)
+                             control_0           ex_stage_i/alu_i/U1081/ZN (r)
+                             control_0           ex_stage_i/alu_i/U247/ZN (r)
+                             control_0           ex_stage_i/alu_i/U993/ZN (r)
+                             control_0           ex_stage_i/alu_i/U997/ZN (r)
+                             control_0           id_stage_i/U1063/ZN (r)
+                             control_1           cs_registers_i/U54/ZN (r)
+                             control_1           ex_stage_i/U9/ZN (r)
+                             control_1           ex_stage_i/alu_i/U22/ZN (r)
+                             control_1           ex_stage_i/alu_i/U246/ZN (r)
+                             control_1           ex_stage_i/alu_i/U37/ZN (r)
+                             control_1           ex_stage_i/alu_i/U81/ZN (r)
+                             control_1           ex_stage_i/alu_i/U992/ZN (r)
+                             control_1           id_stage_i/U976/ZN (r)
+ 9     id_stage_i/U_dft_tp_sdtc_ip_8/dtc_reg ( d, tpe ) ( clk_i )
+                             control_0           id_stage_i/controller_i/U33/ZN (r)
+                             control_0           id_stage_i/controller_i/U59/ZN (r)
+                             control_0           id_stage_i/decoder_i/U103/ZN (r)
+                             control_0           id_stage_i/decoder_i/U109/ZN (r)
+                             control_0           id_stage_i/decoder_i/U124/ZN (r)
+                             control_0           id_stage_i/decoder_i/U141/ZN (r)
+                             control_1           id_stage_i/controller_i/U111/ZN (r)
+                             control_1           id_stage_i/controller_i/U15/ZN (r)
+                             control_1           id_stage_i/controller_i/U17/ZN (r)
+                             control_1           id_stage_i/controller_i/U3/ZN (r)
+                             control_1           id_stage_i/decoder_i/U101/ZN (r)
+                             control_1           id_stage_i/decoder_i/U112/ZN (r)
+                             control_1           id_stage_i/decoder_i/U19/ZN (r)
+                             control_1           id_stage_i/decoder_i/U29/ZN (r)
+ 10    riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800/U_dft_tp_sdtc_ip_9/dtc_reg ( d, tpe ) ( clk_i )
+                             control_0           id_stage_i/decoder_i/U30/ZN (r)
+                             control_0           id_stage_i/decoder_i/U353/ZN (r)
+                             control_0           id_stage_i/decoder_i/U434/ZN (r)
+                             control_0           id_stage_i/decoder_i/U57/ZN (r)
+                             control_0           id_stage_i/decoder_i/U61/ZN (r)
+                             control_0           if_stage_i/hwloop_controller_i/U170/ZN (r)
+                             control_1           id_stage_i/decoder_i/U299/ZN (r)
+                             control_1           id_stage_i/decoder_i/U4/ZN (r)
+                             control_1           if_stage_i/U71/ZN (r)
+                             control_1           if_stage_i/hwloop_controller_i/U4/ZN (r)
+                             control_1           if_stage_i/prefetch_128_prefetch_buffer_i/L0_buffer_i/U29/ZN (r)
+                             control_1           if_stage_i/prefetch_128_prefetch_buffer_i/U107/ZN (r)
+                             control_1           load_store_unit_i/U399/ZN (r)
+
+****************** Test Point Summary *******************
+ Number of testability control_0 test points:       22
+ Number of testability control_1 test points:       33
+ Number of testability observe test points:         97
+
+ Total number of test points:                       152
+ Total number of DFT-inserted test point registers: 10
+**********************************************************
+
+1

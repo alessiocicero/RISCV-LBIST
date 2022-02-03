@@ -1,0 +1,174 @@
+ 
+****************************************
+Report : Scan path
+Design : riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800
+Version: R-2020.09-SP2
+Date   : Thu Jan 13 15:49:30 2022
+****************************************
+
+========================================
+TEST MODE: all_dft_user
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: all_dft_protocol
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: all_dft
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Internal_scan_user
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Internal_scan_protocol
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+Scan_path    Len   ScanDataIn  ScanDataOut ScanEnable  MasterClock SlaveClock
+-----------  ----- ----------- ----------- ----------- ----------- -----------
+I 1          152   test_si1    test_so1    test_en_i   clk_i       -
+I 2          152   test_si2    test_so2    test_en_i   clk_i       -
+I 3          152   test_si3    test_so3    test_en_i   clk_i       -
+I 4          152   test_si4    test_so4    test_en_i   clk_i       -
+I 5          152   test_si5    test_so5    test_en_i   clk_i       -
+I 6          152   test_si6    test_so6    test_en_i   clk_i       -
+I 7          152   test_si7    test_so7    test_en_i   clk_i       -
+I 8          152   test_si8    test_so8    test_en_i   clk_i       -
+I 9          152   test_si9    data_we_o   test_en_i   clk_i       -
+I 10         152   test_si10   irq_id_o[4] test_en_i   clk_i       -
+I 11         152   test_si11   test_so11   test_en_i   clk_i       -
+I 12         152   test_si12   test_so12   test_en_i   clk_i       -
+I 13         152   test_si13   test_so13   test_en_i   clk_i       -
+I 14         152   test_si14   test_so14   test_en_i   clk_i       -
+I 15         152   test_si15   test_so15   test_en_i   clk_i       -
+I 16         152   test_si16   test_so16   test_en_i   clk_i       -
+I 17         152   test_si17   test_so17   test_en_i   clk_i       -
+I 18         151   test_si18   test_so18   test_en_i   clk_i       -
+I 19         151   test_si19   test_so19   test_en_i   clk_i       -
+I 20         151   test_si20   test_so20   test_en_i   clk_i       -
+
+========================================
+TEST MODE: Mission_mode_user
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Mission_mode_protocol
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+========================================
+TEST MODE: Mission_mode
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+No scan path defined in this mode.
+
+1
